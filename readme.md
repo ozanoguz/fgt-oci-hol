@@ -1,4 +1,4 @@
-# FortiGate A/P HA Cluster in OCI Hands-on-Lab
+![image](https://github.com/ozanoguz/fgt-oci-hol/assets/61783699/cfa1731e-a751-4ef0-bfa6-32998874b2e9)# FortiGate A/P HA Cluster in OCI Hands-on-Lab
 
 **!!! DISCLAIMER: THIS REPO IS PREPARED ONLY FOR FORTINET XPERTS SUMMIT KSA '23 SESSION !!!**
 
@@ -20,5 +20,9 @@ Here is the topology diagram showing all components that will be deployed:
 
 First, let's login OCI console using link below. Username/password details will be provided during lab session. 
 
-[Access OCI  Console](https://cloud.oracle.com){:target="_blank"}.
+[Access OCI  Console](https://cloud.oracle.com)
+
+Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/01.login_oci_1.jpg width="200"/>
 
