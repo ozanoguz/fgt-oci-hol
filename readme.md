@@ -1,4 +1,4 @@
-![image](https://github.com/ozanoguz/fgt-oci-hol/assets/61783699/cfa1731e-a751-4ef0-bfa6-32998874b2e9)# FortiGate A/P HA Cluster in OCI Hands-on-Lab
+# FortiGate A/P HA Cluster in OCI Hands-on-Lab
 
 **!!! DISCLAIMER: THIS REPO IS PREPARED ONLY FOR FORTINET XPERTS SUMMIT KSA '23 SESSION !!!**
 
