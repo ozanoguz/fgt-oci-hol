@@ -60,5 +60,8 @@ On next page, you should define a *PREFIX* for your deployment. Each group will 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="200"/>
 
-It will take couple of minutes for deployment to be completed. It will be shown as "Succeeded" after completion. 
+It will take couple of minutes for deployment to be completed. It will be shown as "SUCCEEDED" after completion.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03.jpg width="200"/>
+
 
