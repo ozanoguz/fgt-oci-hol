@@ -30,8 +30,21 @@ Click down arrow on below right and login using username/password pair.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/02.login_oci_2.jpg width="300"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/03.login_oci_3.jpg width="300"/>
 
+### Step 1.2: Change Oracle region
+
 Change the Oracle region to "Saudi Arabia West (Jeddah) on top right using dropdown menu :
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/04.login_oci_4.jpg width="200"/>
 
+## Section 2: Deploy A/P FortiGate cluster
 
+### Step 2.1: Deploy FortiGate cluster using Terraform
+
+Click link below which is redirecting to Oracle Stacks service, the service using Terraform behind the scenes. 
+
+[Create Lab Environment](https://cloud.oracle.com)
+
+Template above is creating following infrastructure:
+
+* 3x VCNs (2x Spoke VCNs and a FortiGate VCN)
+* Required subnets, route tables and security lists
