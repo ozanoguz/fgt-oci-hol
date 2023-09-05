@@ -42,7 +42,9 @@ Change the Oracle region to "Saudi Arabia West (Jeddah) on top right using dropd
 
 Click link below which is redirecting to Oracle Stacks service, the service using Terraform behind the scenes. 
 
-[Create Lab Environment](https://cloud.oracle.com)
+|Create Lab Environment|
+|:-:|
+|[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/ozanoguz/fgt-oci-hol/releases/download/hol/FGT_A-P_NewVCN_v7.0.12_BYOL.zip)|
 
 Template above is creating following infrastructure:
 
