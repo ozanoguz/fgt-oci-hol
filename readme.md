@@ -28,8 +28,8 @@ Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
 
 Click down arrow on below right and login using username/password pair.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/01.login_oci_2.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/02.login_oci_2.jpg width="300"/>
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/01.login_oci_3.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/03.login_oci_3.jpg width="300"/>
 
 
