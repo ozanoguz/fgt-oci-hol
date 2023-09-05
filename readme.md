@@ -40,7 +40,7 @@ Change the Oracle region to "Saudi Arabia West (Jeddah) on top right using dropd
 
 ### Step 2.1: Deploy FortiGate cluster using Terraform
 
-Click link below which is redirecting to Oracle Stacks service, the service using Terraform behind the scenes. 
+Click link below using same browser you used to login OCI. Link below will be redirecting to Oracle Stacks service, the service using Terraform behind the scenes. 
 
 |Create Lab Environment|
 |:-:|
@@ -50,3 +50,4 @@ Template above is creating following infrastructure:
 
 * 3x VCNs (2x Spoke VCNs and a FortiGate VCN)
 * Required subnets, route tables and security lists
+* 2x FortiGate-VM08 using FortiOS v7.0.12 BYOL image
