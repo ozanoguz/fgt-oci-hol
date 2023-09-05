@@ -56,8 +56,9 @@ In "Stacks" management page, check the *I have reviewed and accept the Oracle Te
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_01.jpg width="400"/>
 
-On next page, you should define a *PREFIX* for your deployment. Each group will use a different student-id, so we can easily find specific resources per study group. This step is mandatory. 
+On next page, you should define a *PREFIX* for your deployment. Each group will use a different student-id, so we can easily find specific resources per study group. This step is mandatory. After this, you can click *Next* on below left and then *Create*.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="200"/>
 
+It will take couple of minutes for deployment to be completed. It will be shown as "Succeeded" after completion. 
 
