@@ -58,6 +58,6 @@ In "Stacks" management page, check the *I have reviewed and accept the Oracle Te
 
 On next page, you should define a *PREFIX* for your deployment. Each group will use a different student-id, so we can easily find specific resources per study group. This step is mandatory. 
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="200"/>
 
 
