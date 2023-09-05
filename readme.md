@@ -62,7 +62,7 @@ Make sure specific student compartment has been selected. then click **_Next_** 
 
 On next page, you should define a _**PREFIX**_ for your deployment. Each group will use a different student-id and compartment, so we can easily find specific resources per study group. **This step is mandatory**. After this, you can click _**Next**_ on below left and then _**Create**_.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02.jpg width="150"/>
 
 It will take couple of minutes for deployment to be completed. It will be shown as *SUCCEEDED* after completion.
 
