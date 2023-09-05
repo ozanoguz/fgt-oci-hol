@@ -52,9 +52,13 @@ Template above is creating following infrastructure:
 * Required subnets, route tables and security lists
 * 2x FortiGate-VM08 using FortiOS v7.0.12 BYOL image
 
-In "Stacks" management page, check the *I have reviewed and accept the Oracle Terms of Use* box, then click *Next* at bottom left.
+In "Stacks" management page, check the *I have reviewed and accept the Oracle Terms of Use* box. 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_01.jpg width="400"/>
+
+Make sure specific student compartment has been selected. then click *Next* at bottom left.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/08.stacks_04.jpg width="400"/>
 
 On next page, you should define a *PREFIX* for your deployment. Each group will use a different student-id, so we can easily find specific resources per study group. This step is mandatory. After this, you can click *Next* on below left and then *Create*.
 
