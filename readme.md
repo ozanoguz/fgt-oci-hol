@@ -51,3 +51,8 @@ Template above is creating following infrastructure:
 * 3x VCNs (2x Spoke VCNs and a FortiGate VCN)
 * Required subnets, route tables and security lists
 * 2x FortiGate-VM08 using FortiOS v7.0.12 BYOL image
+
+In "Stacks" management page, check the *I have reviewed and accept the Oracle Terms of Use* box, then click *Next* at bottom left.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_1.jpg width="200"/>
+
