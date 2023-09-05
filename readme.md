@@ -12,7 +12,7 @@ This step-by-step guide describes how to deploy FortiGate Active/Passive cluster
 -	[Section 6: Testing the deployment](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-6-optional-automation-by-scaling-up-nginx-deployment)
 -	[Section 7: Destroy the lab](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-7-destroy-the-lab)
 
-Here is the topology diagram showing all components that will be deployed:
+Here is the topology diagram showing all components that will be deployed: 
 
 ## Section 1: Login OCI and prepare for deployment
 
