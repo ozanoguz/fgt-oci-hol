@@ -54,5 +54,5 @@ Template above is creating following infrastructure:
 
 In "Stacks" management page, check the *I have reviewed and accept the Oracle Terms of Use* box, then click *Next* at bottom left.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_1.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_01.jpg width="200"/>
 
