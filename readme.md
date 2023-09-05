@@ -20,6 +20,6 @@ Here is the topology diagram showing all components that will be deployed:
 
 First, let's login OCI console using link below. Username/password details will be provided during lab session. 
 
-[Access OCI  Console](https://cloud.oracle.com)
+[Access OCI  Console](https://cloud.oracle.com_blank)
 
 
