@@ -72,10 +72,10 @@ It will take couple of minutes for deployment to be completed. It will be shown 
 
 FortiGate-VMs should be deployed and visible under _**Compute > Instances **_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/09.verify01.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/09.verify01.jpg width="300"/>
 
 There will be 3x VCNs deployed for lab as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/10.verify02.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/10.verify02.jpg width="300"/>
 
 
