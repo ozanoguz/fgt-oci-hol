@@ -68,9 +68,9 @@ It will take couple of minutes for deployment to be completed. It will be shown 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03.jpg width="100"/>
 
-### Step 2.2: Verify if deployment is successful.
+### Step 2.2: Verify deployment
 
-FortiGate-VMs should be deployed and visible under _**Compute > Instances **_
+FortiGate-VMs should be deployed and shown as *running* under _**Compute > Instances **_
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/09.verify01.jpg width="500"/>
 
