@@ -174,7 +174,7 @@ Both route rules should be showing DRG as target type.
 
 ### Step 4.3: FortiGate Trust subnet routing
 
-Configure route table "Student##-trust-routetable" as below. This is for return traffic.
+Configure route table "Student##-trust-routetable" as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
 
