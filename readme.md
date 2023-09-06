@@ -118,5 +118,5 @@ Type "dynamic routing gateway" to search box on top:
 
 Make sure specific compartment has been selected, then select "Create dynamic routing gateway".
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/18.routing2.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/19.routing2.jpg width="400"/>
 
