@@ -172,7 +172,7 @@ Both route rules should be showing DRG as target type.
 
 **Follow same steps (4.3) to configure for Spoke2-VCN route table.**
 
-### Step 4.3: FortiGate Trust subnet routing
+### Step 4.4: FortiGate Trust subnet routing
 
 Configure route table **Student##-trust-routetable** as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
 
