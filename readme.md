@@ -88,6 +88,6 @@ Click _**Create**_ on _**Compute > Instances**_
 
 Give a name to spoke-VM using group Student-ID#
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/12.spokevm02.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/12.spokevm02.jpg width="200"/>
 
 
