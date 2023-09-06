@@ -92,9 +92,7 @@ Give a name to spoke-VM using group Student-ID# (example: Student25-Spoke1-VM)
 
 Under "Image and shape" section select _Canonical Ubuntu 22.04" image for Spoke1-VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="200"/>
-
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="300"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04.jpg width="300"/>
 
 
 
