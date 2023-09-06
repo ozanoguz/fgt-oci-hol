@@ -192,7 +192,7 @@ FortiGate Hub VCN attachment route-table configuration:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/33.routing15.jpg width="300"/>
 
-Spoke VCN attachment route-table configuration:
+Spoke VCN attachment route-table configuration: (should be configured for both Spoke-VCN attachments)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/34.routing16.jpg width="300"/>
 
