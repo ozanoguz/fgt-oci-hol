@@ -190,11 +190,11 @@ FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attac
 
 FortiGate Hub VCN attachment route-table configuration:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/33.routing15.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/33.routing15.jpg width="300"/>
 
 Spoke VCN attachment route-table configuration:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/34.routing16.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/34.routing16.jpg width="300"/>
 
 VCN attachment route-table configuration should be like this:
 
