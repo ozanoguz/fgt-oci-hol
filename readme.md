@@ -178,6 +178,13 @@ Configure route table **Student##-trust-routetable** as below. You can navigate 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
 
+### Step 4.5: DRG route tables
+
+Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > DRG route tables > Create DRG route table_
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14.jpg width="400"/>
+
+
 ## Section 5: Configure FortiGate routing and firewall policy
 
 ## Section 6: Testing the deployment
