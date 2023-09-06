@@ -124,3 +124,29 @@ Make sure specific compartment has been selected, then select "Create dynamic ro
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/19.routing2.jpg width="300"/>
 
+Set DRG name with your group student-ID as below. Make sure specific compartment has been selected.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/21.routing3.jpg width="300"/>
+
+### Step 4.2: DRG VCN attachments
+
+We need to attach Spoke and FortiGate VCNs to DRG to enable communication. 
+
+In DRG configuration screen, select "VCN attachments" on left.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/22.routing4.jpg width="300"/>
+
+Configure FortiGate-VCN attachment as below:
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/23.routing5.jpg width="300"/>
+
+Configure Spoke1-VCN attachment as below:
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/24.routing6.jpg width="300"/>
+
+Configure Spoke2-VCN attachment as below:
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/25.routing7.jpg width="300"/>
+
+
+
+
+
+
