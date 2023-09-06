@@ -114,6 +114,6 @@ Click "Create" to deploy Spoke1-VM.
 
 Type "dynamic routing gateway" to search box on top:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/18.routing1.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/18.routing1.jpg width="400"/>
 
 
