@@ -108,6 +108,10 @@ Click "Create" to deploy Spoke1-VM.
 
 **Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.**
 
+Before proceeding, make sure all VMs are in running state.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/20.spokevm07_1.jpg width="200"/>
+
 ## Section 4: OCI advanced routing
 
 ### Step 4.1: Create DRG
