@@ -107,3 +107,13 @@ Click "Create" to deploy Spoke1-VM.
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/17.spokevm07.jpg width="200"/>
 
 **Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.**
+
+## Section 4: OCI advanced routing
+
+### Step 4.1: Create DRG
+
+Type "dynamic routing gateway" to search box on top:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/18.routing1.jpg width="300"/>
+
+
