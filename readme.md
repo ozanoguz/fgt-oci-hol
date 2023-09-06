@@ -178,5 +178,8 @@ Configure route table **Student##-trust-routetable** as below. You can navigate 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
 
+## Section 5: Configure FortiGate routing and firewall policy
 
+## Section 6: Testing the deployment
 
+## Section 7: Destroy the lab
