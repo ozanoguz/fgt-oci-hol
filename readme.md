@@ -184,6 +184,21 @@ Create two separate route tables in DRG management screen as below. Navigation p
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14.jpg width="400"/>
 
+Associate DRG route tables with VCN attachments. 
+
+FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attachments should use _Student##-Spoke-Route-Table_. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > VCN attachments > Edit_
+
+FortiGate Hub VCN attachment route-table configuration:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/33.routing15.jpg width="400"/>
+
+Spoke VCN attachment route-table configuration:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/34.routing16.jpg width="400"/>
+
+VCN attachment route-table configuration should be like this:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17.jpg width="400"/>
 
 ## Section 5: Configure FortiGate routing and firewall policy
 
