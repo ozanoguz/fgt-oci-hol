@@ -154,11 +154,11 @@ Verify that you have 3 successful attachments:
 
 ### Step 4.3: Spoke subnet routing (for E/W and S/N inspection)
 
-Under "Virtual cloud networks > Spoke1-VCN > Route tables", select "Student##-spoke1-routetable"
+Under _"Virtual cloud networks > Spoke1-VCN > Route tables"_, select **Student##-spoke1-routetable**
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="300"/>
 
-After clicking "Add Route rules", add Spoke2-VCN CIDR route pointing to DRG attachment.
+After clicking **Add Route rules**, add Spoke2-VCN CIDR route pointing to DRG attachment.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/28.routing10.jpg width="300"/>
 
@@ -174,7 +174,7 @@ Both route rules should be showing DRG as target type.
 
 ### Step 4.3: FortiGate Trust subnet routing
 
-Configure route table "Student##-trust-routetable" as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
+Configure route table **Student##-trust-routetable** as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
 
