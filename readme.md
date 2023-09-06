@@ -78,4 +78,8 @@ There will be 3x VCNs deployed for lab as below:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/10.verify02.jpg width="500"/>
 
+## Section 3: Deploy Spoke-VMs for testing
 
+### Step 3.1: Create Ubuntu instance
+
+Click _**Create**_ on * Compute > Instances
