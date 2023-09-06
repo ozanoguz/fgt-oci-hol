@@ -150,7 +150,7 @@ Configure Spoke2-VCN attachment as below:
 
 Verify that you have 3 successful attachments:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/26.routing8.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/26.routing8.jpg width="400"/>
 
 
 
