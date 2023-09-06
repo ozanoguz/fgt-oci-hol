@@ -108,4 +108,4 @@ Click "Create" to deploy Spoke1-VM.
 
 $${\color{red}{Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.}$$
 
-$${\color{red}Red}$$
+$${\color{red}Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.}$$
