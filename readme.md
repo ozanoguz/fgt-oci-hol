@@ -102,4 +102,9 @@ Under "Add SSH keys" section, download private key that we'll use later to login
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/16.spokevm06.jpg width="400"/>
 
+Click "Create" to deploy Spoke1-VM.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/17.spokevm07.jpg width="400"/>
+
+Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN. 
 
