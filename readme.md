@@ -168,7 +168,15 @@ Edit 0.0.0.0/0 route to point DRG.
 
 Both route rules should be showing DRG as target type. 
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/30.routing12.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/30.routing12.jpg width="400"/>
+
+**Follow same steps (4.3) to configure for Spoke2-VCN route table.**
+
+### Step 4.3: FortiGate Trust subnet routing
+
+Configure route table "Student##-trust-routetable" as below. This is for return traffic.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
 
 
-Follow same steps (4.3) to configure for Spoke2-VCN route table.
+
