@@ -152,7 +152,7 @@ Verify that you have 3 successful attachments:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/26.routing8.jpg width="400"/>
 
-### Step 4.3: Spoke subnet routing
+### Step 4.3: Spoke subnet routing (for E/W and S/N inspection)
 
 Under "Virtual cloud networks > Spoke1-VCN > Route tables", select "Student##-spoke1-routetable"
 
@@ -162,3 +162,13 @@ After clicking "Add Route rules", add Spoke2-VCN CIDR route pointing to DRG atta
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/28.routing10.jpg width="300"/>
 
+Edit 0.0.0.0/0 route to point DRG.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/29.routing11.jpg width="300"/>
+
+Both route rules should be showing DRG as target type. 
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/30.routing12.jpg width="300"/>
+
+
+Follow same steps (4.3) to configure for Spoke2-VCN route table.
