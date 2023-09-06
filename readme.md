@@ -83,3 +83,6 @@ There will be 3x VCNs deployed for lab as below:
 ### Step 3.1: Create Ubuntu instance
 
 Click _**Create**_ on _**Compute > Instances**_
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/11.spokevm01.jpg width="500"/>
+
