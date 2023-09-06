@@ -82,4 +82,4 @@ There will be 3x VCNs deployed for lab as below:
 
 ### Step 3.1: Create Ubuntu instance
 
-Click _**Create**_ on * Compute > Instances
+Click _**Create**_ on _**Compute > Instances**_
