@@ -156,7 +156,7 @@ Verify that you have 3 successful attachments:
 
 Under "Virtual cloud networks > Spoke1-VCN > Route tables", select "Student##-spoke1-routetable"
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="300"/>
 
 
 
