@@ -8,9 +8,9 @@ This step-by-step guide describes how to deploy FortiGate Active/Passive cluster
 - [Section 2: Deploy A/P FortiGate cluster](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-2-deploy-ap-fortigate-cluster)
 -	[Section 3: Deploy Spoke-VMs for testing](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-3-deploy-spoke-vms-for-testing)
 -	[Section 4: OCI advanced routing](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-4-oci-advanced-routing)
--	[Section 5: Configure FortiGate routing and firewall policy](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-5-southnorth-egress-traffic-inspection-through-fortigate)
--	[Section 6: Testing the deployment](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-6-optional-automation-by-scaling-up-nginx-deployment)
--	[Section 7: Destroy the lab](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-7-destroy-the-lab)
+-	[Section 5: Configure FortiGate routing and firewall policy](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-5-configure-fortigate-routing-and-firewall-policy)
+-	[Section 6: Testing the deployment](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-6-testing-the-deployment)
+-	[Section 7: Destroy the lab](https://github.com/ozanoguz/fgt-oci-hol/tree/main#section-7-destroy-the-lab)
 
 Here is the topology diagram showing all components that will be deployed: 
 
