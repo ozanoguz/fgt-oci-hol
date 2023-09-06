@@ -158,5 +158,7 @@ Under "Virtual cloud networks > Spoke1-VCN > Route tables", select "Student##-sp
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="300"/>
 
+After clicking "Add Route rules", add Spoke2-VCN CIDR route pointing to DRG attachment.
 
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/28.routing10.jpg width="300"/>
 
