@@ -4,7 +4,7 @@
 
 This step-by-step guide describes how to deploy FortiGate Active/Passive cluster on OCI (Oracle Cloud Infrastructure) platform using Terraform to protect workloads for N/S and E/W traffic using native networking components e.g. DRG. This hands-on-lab consists on following steps:
 
--	[Section 1: Login OCI and prepare for deployment](https://github.com/ozanoguz/fgt-oci-hol/tree/main#step-11-access-oci-console)
+-	[Section 1: Login OCI and prepare for deployment](https://github.com/ozanoguz/fgt-oci-hold/blob/main/README.md#section-1-login-oci-and-prepare-for-deployment)
 - [Section 2: Deploy A/P FortiGate cluster](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-2-deploying-fortigate-single-vm-instance-using-aws-marketplace)
 -	[Section 3: Deploy Spoke-VMs for testing](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-3-preparing-eks-cluster--deploy-simple-application)
 -	[Section 4: OCI advanced routing](https://github.com/ozanoguz/fgt-sdn-connector-eks-egress/blob/main/README.md#section-4-connecting-fortigate-to-eks)
