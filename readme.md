@@ -107,3 +107,5 @@ Click "Create" to deploy Spoke1-VM.
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/17.spokevm07.jpg width="200"/>
 
 $${\color{red}{Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.}$$
+
+$${\color{red}Red}$$
