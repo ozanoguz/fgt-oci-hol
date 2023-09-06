@@ -84,10 +84,10 @@ There will be 3x VCNs deployed for lab as below:
 
 Click _**Create**_ on _**Compute > Instances**_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/11.spokevm01.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/11.spokevm01.jpg width="400"/>
 
 Give a name to spoke-VM using group Student-ID#
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/12.spokevm02.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/12.spokevm02.jpg width="300"/>
 
 
