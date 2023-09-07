@@ -228,13 +228,13 @@ Now, we will use this route-table in Hub VCN DRG attachment configuration. Path:
 
 Since we are using BYOL type of image, FortiGate-VM license should be activated. Let's SSH both cluster members using public IPs. **SSH login password is VM's OCID for the 1st time, which can be copied from OCI console.You can set any password you can remember.**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt01.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt01.jpg width="300"/>
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt02.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt02.jpg width="500"/>
 
 You will need FortiFlex token for license activation. This will be shared during HoL session. CLI command is "execute vm-license <TOKEN-ID>
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt03.jpg width="200"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt03.jpg width="300"/>
 
 
 Follow same steps for other FortiGate cluster member (FortiGate-B). 
