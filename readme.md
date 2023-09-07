@@ -232,10 +232,9 @@ Since we are using BYOL type of image, FortiGate-VM license should be activated.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt02.jpg width="500"/>
 
-You will need FortiFlex token for license activation. This will be shared during HoL session. CLI command is "execute vm-license <TOKEN-ID>
+You will need FortiFlex token for license activation. This will be shared during HoL session. CLI command is "execute vm-license <TOKEN-ID>". Type "y" for system to reboot and re-open with license activated. 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt03.jpg width="300"/>
-
 
 Follow same steps for other FortiGate cluster member (FortiGate-B). 
 
