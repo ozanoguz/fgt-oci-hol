@@ -204,10 +204,19 @@ VCN attachment route-table configuration should be like this:
 
 We need to configure FortiGate HA cluster floating IP as next-hop for handling routing by DRG. To achieve this, first let's create a route-table in FortiGate Hub VCN and use that route-table in Hub VCN DRG attachment ingress routing.
 
-Create a route-table in FortiGate Hub VCN as below:
+Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18.jpg width="400"/>
 
+FortiGate A/P HA cluster floating IP can be found under FortiGate-VM vNIC configuration. We will use trust interface floating IP as private IP target.
+
+You can find the floating IP using this path: _Instances > Student##-FortiGate-A > Attached VNICs > Trust-a interface > IPv4 addresses > Secondary IP (not primary)
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20.jpg width="400"/>
+
+Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19.jpg width="400"/>
 
 ## Section 5: Configure FortiGate routing and firewall policy
 
