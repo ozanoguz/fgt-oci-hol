@@ -218,6 +218,10 @@ Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19.jpg width="400"/>
 
+Now, we will use this route-table in Hub VCN DRG attachment configuration. Path: _Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > VCN attachments > Edit Hub VCN attachment_
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/39.routing21.jpg width="400"/>
+
 ## Section 5: Configure FortiGate routing and firewall policy
 
 ## Section 6: Testing the deployment
