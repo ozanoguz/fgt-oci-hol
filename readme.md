@@ -212,7 +212,7 @@ FortiGate A/P HA cluster floating IP can be found under FortiGate-VM vNIC config
 
 You can find the floating IP using this path: _Instances > Student##-FortiGate-A > Attached VNICs > Trust-a interface > IPv4 addresses > Secondary IP (not primary)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20.jpg width="200"/>
 
 Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs.
 
