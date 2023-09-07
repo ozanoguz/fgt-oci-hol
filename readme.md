@@ -200,6 +200,15 @@ VCN attachment route-table configuration should be like this:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17.jpg width="400"/>
 
+### Step 4.6: Hub VCN Ingress Route Table
+
+We need to configure FortiGate HA cluster floating IP as next-hop for handling routing by DRG. To achieve this, first let's create a route-table in FortiGate Hub VCN and use that route-table in Hub VCN DRG attachment ingress routing.
+
+Create a route-table in FortiGate Hub VCN as below:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19.jpg width="400"/>
+
+
 ## Section 5: Configure FortiGate routing and firewall policy
 
 ## Section 6: Testing the deployment
