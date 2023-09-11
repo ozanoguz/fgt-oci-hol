@@ -254,11 +254,11 @@ Login FortiGate management GUI using public IPs _(https://<FortiGate-Public-IP>)
 
 Click to "Later" on following screen:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt05.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt05.jpg width="400"/>
 
 We need to add Spoke-VCN CIDR routes and set port2-subnet's first IP address as gateway IP. This is done for return traffic.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt06.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt06.jpg width="400"/>
 
 
 ## Section 6: Testing the deployment
