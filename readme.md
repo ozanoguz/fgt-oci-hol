@@ -234,7 +234,7 @@ SSH both cluster members using public IPs. **SSH login password is VM's OCID for
 
 Because of the known cloud-init issue, we need to execute "execute factoryreset" before proceeding:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt04.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt04.jpg width="300"/>
 
 _**Make sure Step 5.1 is applied on both cluster members.**_
 
