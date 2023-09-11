@@ -246,7 +246,20 @@ You will need FortiFlex token for license activation. This will be shared during
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt03.jpg width="300"/>
 
-Follow same steps for other FortiGate cluster member (FortiGate-B). 
+Follow same steps for other FortiGate cluster member (FortiGate-B).
+
+### Step 5.2: FortiGate GUI and static route
+
+Login FortiGate management GUI using public IPs _(https://<FortiGate-Public-IP>)_
+
+Click to "Later" on following screen:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt05.jpg width="300"/>
+
+We need to add Spoke-VCN CIDR routes and set port2-subnet's first IP address as gateway IP. This is done for return traffic.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt06.jpg width="300"/>
+
 
 ## Section 6: Testing the deployment
 
