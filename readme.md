@@ -326,7 +326,7 @@ SSH to Spoke2-VM:
 
 Verification:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test04.jpg width="400"/>
 
 ### Step 6.2: Egress test
 
