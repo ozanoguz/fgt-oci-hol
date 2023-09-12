@@ -200,7 +200,16 @@ VCN attachment route-table configuration should be like this:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17.jpg width="400"/>
 
-### Step 4.6: Hub VCN Ingress Route Table
+### Step 4.6: Import route distributions
+
+We need to create route distributions for DRG route tables, so prefixes will be announced for connectivity. 
+
+First, create an import route distribution for Hub DRG route table as below (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing22.jpg width="400"/>
+
+
+### Step 4.7: Hub VCN Ingress Route Table
 
 We need to configure FortiGate HA cluster floating IP as next-hop for handling routing by DRG. To achieve this, first let's create a route-table in FortiGate Hub VCN and use that route-table in Hub VCN DRG attachment ingress routing.
 
