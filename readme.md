@@ -309,9 +309,11 @@ Then, we will create a ingress firewall policy using objects above. You can set 
 Using floating Public IP that is assigned to FortiGate-A untrust port, try to reach out using specific ports (TCP/2244 and TCP/2245). 
 
 SSH to Spoke1-VM:
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="400"/>
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="500"/>
 
 SSH to Spoke2-VM:
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="400"/>
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="500"/>
 
 ## Section 7: Destroy the lab
