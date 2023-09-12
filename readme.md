@@ -216,11 +216,11 @@ Use import route distributions within related DRG route tables: (_Path: Networki
 
 Hub DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24.jpg width="400"/>
 
 Spoke DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing25.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing25.jpg width="400"/>
 
 ### Step 4.7: Hub VCN Ingress Route Table
 
