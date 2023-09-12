@@ -352,7 +352,7 @@ Check FortiGate traffic logs
 
 ### Step 6.3: East/West test
 
-Try to reach Spoke2-VM from Spoke1-VM using ICMP or SSH
+Try to reach Spoke2-VM from Spoke1-VM using SSH or Telnet to port TCP/22 as below.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test09.jpg width="400"/>
 
