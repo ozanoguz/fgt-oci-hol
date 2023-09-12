@@ -288,7 +288,7 @@ You should see both static routes on active FortiGate member as below:
 
 ### Step 5.4: Ingress firewall policy
 
-Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
+Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside (North/South) to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt08.jpg width="500"/>
 
@@ -303,6 +303,10 @@ Then, we will create a ingress firewall policy using objects above. You can set 
 Create host objects on FortiGate for Spoke1-VM and Spoke2-VM. (_Path: **Policy & Objects > Addresses  > Create New**_)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt10.jpg width="300"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt11.jpg width="300"/>
+
+Using those objects, create an Egress Policy for allowing Internet access (South/North). You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt12.jpg width="400"/>
 
 ### Step 5.6: East-West firewall policy
 
