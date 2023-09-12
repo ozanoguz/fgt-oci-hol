@@ -296,7 +296,7 @@ Create another VIP for Spoke2-VM using TCP/2245.
 
 Then, we will create a ingress firewall policy using objects above. You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="400"/>
 
 ### Step 5.5: Egress firewall policy
 
