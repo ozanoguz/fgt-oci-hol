@@ -294,16 +294,24 @@ Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showi
 
 Create another VIP for Spoke2-VM using TCP/2245.
 
-Then, we will create a ingress firewall policy using objects above.
+Then, we will create a ingress firewall policy using objects above. You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="500"/>
-
-Using VIP objects
 
 ### Step 5.5: Egress firewall policy
 
 ### Step 5.6: East-West firewall policy
 
 ## Section 6: Testing the deployment
+
+### Step 6.1: Ingress test
+
+Using floating Public IP that is assigned to FortiGate-A untrust port, try to reach out using specific ports (TCP/2244 and TCP/2245). 
+
+SSH to Spoke1-VM:
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="300"/>
+
+SSH to Spoke2-VM:
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="300"/>
 
 ## Section 7: Destroy the lab
