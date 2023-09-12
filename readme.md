@@ -302,7 +302,7 @@ Then, we will create a ingress firewall policy using objects above. You can set 
 
 Create host objects on FortiGate for Spoke1-VM and Spoke2-VM. (_Path: **Policy & Objects > Addresses  > Create New**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt10.jpg width="500"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt11.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt10.jpg width="300"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt11.jpg width="300"/>
 
 ### Step 5.6: East-West firewall policy
 
