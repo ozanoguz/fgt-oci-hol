@@ -328,8 +328,32 @@ Verification:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test04.jpg width="400"/>
 
+Check FortiGate traffic logs:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test05.jpg width="400"/>
+
 ### Step 6.2: Egress test
 
+Try to ping Google DNS 8.8.8.8 from Spoke1-VM or Spoke2-VM
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test06.jpg width="400"/>
+
+You can also try curl command to reach www.fortinet.com
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test07.jpg width="400"/>
+
+Check FortiGate traffic logs
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test08.jpg width="400"/>
+
 ### Step 6.3: East/West test
+
+Try to reach Spoke2-VM from Spoke1-VM using ICMP or SSH
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test09.jpg width="400"/>
+
+Check FortiGate traffic logs:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test10.jpg width="400"/>
 
 ## Section 7: Destroy the lab
