@@ -332,7 +332,7 @@ Verification:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test04.jpg width="400"/>
 
-Check FortiGate traffic logs:
+Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test05.jpg width="500"/>
 
@@ -346,7 +346,7 @@ You can also try curl command to reach www.fortinet.com
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test07.jpg width="400"/>
 
-Check FortiGate traffic logs
+Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test08.jpg width="400"/>
 
@@ -356,7 +356,7 @@ Try to reach Spoke2-VM from Spoke1-VM using SSH or Telnet to port TCP/22 as belo
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test09.jpg width="400"/>
 
-Check FortiGate traffic logs:
+Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test10.jpg width="400"/>
 
