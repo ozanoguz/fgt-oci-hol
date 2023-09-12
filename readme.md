@@ -310,6 +310,10 @@ Using those objects, create an Egress Policy for allowing Internet access (South
 
 ### Step 5.6: East-West firewall policy
 
+Create a firewall policy to allow traffic between Spoke VMs:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt13.jpg width="400"/>
+
 ## Section 6: Testing the deployment
 
 ### Step 6.1: Ingress test
