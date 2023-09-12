@@ -316,4 +316,8 @@ SSH to Spoke2-VM:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="500"/>
 
+Verification:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="500"/>
+
 ## Section 7: Destroy the lab
