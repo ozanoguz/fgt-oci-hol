@@ -290,7 +290,15 @@ You should see both static routes on active FortiGate member as below:
 
 Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt08.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt08.jpg width="500"/>
+
+Create another VIP for Spoke2-VM using TCP/2245.
+
+Then, we will create a ingress firewall policy using objects above.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="500"/>
+
+Using VIP objects
 
 ### Step 5.5: Egress firewall policy
 
