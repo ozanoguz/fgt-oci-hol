@@ -320,4 +320,8 @@ Verification:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/>
 
+### Step 6.2: Egress test
+
+### Step 6.3: East/West test
+
 ## Section 7: Destroy the lab
