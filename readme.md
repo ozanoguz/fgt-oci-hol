@@ -310,11 +310,11 @@ Using floating Public IP that is assigned to FortiGate-A untrust port, try to re
 
 SSH to Spoke1-VM:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="600"/>
 
 SSH to Spoke2-VM:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="600"/>
 
 Verification:
 
