@@ -334,7 +334,7 @@ Verification:
 
 Check FortiGate traffic logs:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test05.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test05.jpg width="500"/>
 
 ### Step 6.2: Egress test
 
