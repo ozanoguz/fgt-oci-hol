@@ -348,7 +348,7 @@ You can also try curl command to reach www.fortinet.com
 
 Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test08.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test08.jpg width="500"/>
 
 ### Step 6.3: East/West test
 
@@ -358,6 +358,6 @@ Try to reach Spoke2-VM from Spoke1-VM using SSH or Telnet to port TCP/22 as belo
 
 Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test10.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test10.jpg width="500"/>
 
 ## Section 7: Destroy the lab
