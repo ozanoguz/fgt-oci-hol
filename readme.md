@@ -356,5 +356,5 @@ Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
 Access OCI Stacks service and destroy the template.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/destroy.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/destroy.jpg width="500"/>
 
