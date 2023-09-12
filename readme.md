@@ -206,8 +206,11 @@ We need to create route distributions for DRG route tables, so prefixes will be 
 
 First, create an import route distribution for Hub DRG route table as below (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing22.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing22.jpg width="400"/>
 
+Create another import route distribution for Spoke DRG route table as below:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing23.jpg width="400"/>
 
 ### Step 4.7: Hub VCN Ingress Route Table
 
