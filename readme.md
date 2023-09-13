@@ -14,7 +14,7 @@ This step-by-step guide describes how to deploy FortiGate Active/Passive cluster
 
 Here is the topology diagram showing all components that will be deployed:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/KSA_Topology.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/KSA_Topology.jpg width="500"/>
 
 ## Section 1: Login OCI and prepare for deployment
 
