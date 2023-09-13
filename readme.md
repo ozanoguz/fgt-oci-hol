@@ -230,9 +230,9 @@ You can find the floating IP using this path: _Instances > Student##-FortiGate-A
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20.jpg width="200"/>
 
-Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs.
+Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs and Internet.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/37.routing19a.jpg width="400"/>
 
 Now, we will use this route-table in Hub VCN DRG attachment configuration. Path: _Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > VCN attachments > Edit Hub VCN attachment_
 
