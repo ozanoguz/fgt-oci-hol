@@ -204,7 +204,17 @@ Use import route distribution within DRG hub route table: (_Path: Networking > C
 
 Hub DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24a.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24a.jpg width="300"/>
+
+Second, create another import route distribution for Spoke DRG route table to allow Hub VCN CIDR to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24b.jpg width="500"/>
+
+Use import route distribution within DRG spoke route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
+
+Spoke DRG route table:
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24c.jpg width="300"/>
 
 ### Step 4.7: Hub VCN Ingress Route Table
 
