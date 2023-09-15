@@ -96,9 +96,9 @@ Under "Image and shape" section select _Canonical Ubuntu 22.04" image for Spoke1
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="500"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04.jpg width="500"/>
 
-Under "Primary VNIC Configuration" section, select related VCN and subnets as follows:
+Under "Primary VNIC Configuration" section, select related VCN and subnets as follows. **Remove "Automatically assign public IPV4 address" check, since we will not use it."**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/15.spokevm05.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/15.spokevm05a.jpg width="400"/>
 
 Under "Add SSH keys" section, download private key that we'll use later to login spoke-VMs.
 
