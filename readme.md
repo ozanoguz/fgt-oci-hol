@@ -174,13 +174,13 @@ Configure route table **Student##-trust-routetable** as below. You can navigate 
 
 ### Step 4.5: DRG route tables
 
-Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > DRG route tables > Create DRG route table_
+Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > Student##-DRG >  DRG route tables > Create DRG route table_
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14.jpg width="400"/>
 
 Associate DRG route tables with VCN attachments. 
 
-FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attachments should use _Student##-Spoke-Route-Table_. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > VCN attachments > Edit_
+FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attachments should use _Student##-Spoke-Route-Table_. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways >Student##-DRG > VCN attachments > Edit_
 
 FortiGate Hub VCN attachment route-table configuration:
 
@@ -222,7 +222,7 @@ Spoke DRG route table:
 
 We need to configure FortiGate HA cluster floating IP as next-hop for handling routing by DRG. To achieve this, first let's create a route-table in FortiGate Hub VCN and use that route-table in Hub VCN DRG attachment ingress routing.
 
-Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID.
+Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID. _Navigation Path: Networking > Virtual Cloud Networks > Student##-VCN > Route Tables > Create Route Table_
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18.jpg width="400"/>
 
@@ -232,7 +232,7 @@ You can find the floating IP using this path: _Instances > Student##-FortiGate-A
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20.jpg width="200"/>
 
-Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs and Internet.
+Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs and Internet. _Navigation Path: Networking > Virtual cloud networks > Student##-VCN > Route Tables > Student##-Ingress-Route-Table > Add Route Rules_
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing19a.jpg width="500"/>
 
