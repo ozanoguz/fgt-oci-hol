@@ -30,11 +30,11 @@ Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
 
 Choose identity domain named "ksa_domain" from the dropdown list of domains.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/02.login_oci_2a.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/02.login_oci_2a.JPG width="300"/>
 
 Enter username and password, then click "Sign In". 
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/03.login_oci_3a.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/03.login_oci_3a.JPG width="300"/>
 
 ### Step 1.2: Change Oracle region
 
