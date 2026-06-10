@@ -166,7 +166,7 @@ Under _"Virtual cloud networks > Spoke1-VCN > Routing"_, select **Student##-spok
 
 Edit 0.0.0.0/0 route to point DRG.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/29.routing11.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/29.routing11a.JPG width="300"/>
 
 **Follow same step (4.3) to configure for Spoke2-VCN route table.**
 
