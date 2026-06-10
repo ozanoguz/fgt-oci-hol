@@ -174,7 +174,7 @@ Edit 0.0.0.0/0 route to point DRG.
 
 Configure route table **Student##-trust-routetable** as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13a.JPG width="400"/>
 
 ### Step 4.5: DRG route tables
 
