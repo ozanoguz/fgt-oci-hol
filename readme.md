@@ -148,7 +148,7 @@ Configure FortiGate-VCN attachment as below:
 
 Configure Spoke1-VCN attachment as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/24.routing6.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/24.routing6a.JPG width="300"/>
 
 Configure Spoke2-VCN attachment as below:
 
