@@ -214,7 +214,7 @@ Hub DRG route table:
 
 Second, create another import route distribution for Spoke DRG route table to allow Hub VCN CIDR to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24b.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24b2.JPG width="600"/>
 
 Use import route distribution within DRG spoke route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
 
