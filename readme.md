@@ -98,7 +98,7 @@ Give a name to spoke-VM using group Student-ID# (example: Student25-Spoke1-VM)
 
 Under "Image and shape" section select _Canonical Ubuntu 22.04" image for Spoke1-VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="500"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="500"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04a.jpg width="500"/>
 
 Under "Primary VNIC Configuration" section, select related VCN and subnets as follows. **Remove "Automatically assign public IPV4 address" check, since we will not use it."**
 
