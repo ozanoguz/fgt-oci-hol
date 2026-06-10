@@ -144,7 +144,7 @@ In DRG configuration screen, select "VCN attachments" on left.
 
 Configure FortiGate-VCN attachment as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/23.routing5.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/23.routing5a.JPG width="300"/>
 
 Configure Spoke1-VCN attachment as below:
 
