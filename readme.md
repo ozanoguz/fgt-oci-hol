@@ -106,7 +106,7 @@ Under "Primary VNIC Configuration" section, select related VCN and subnets as fo
 
 Under "Add SSH keys" section, download private key that we'll use later to login spoke-VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/16.spokevm06.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/16.spokevm06a.JPG width="400"/>
 
 Click "Create" to deploy Spoke1-VM.
 
