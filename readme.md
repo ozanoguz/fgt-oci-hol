@@ -204,7 +204,7 @@ We need to create route distributions for DRG hub route tables, so required pref
 
 First, create an import route distribution for Hub DRG route table to allow spoke VCN CIDR's to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing22a.jpg width="500"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing22a2.JPG width="500"/>
 
 Use import route distribution within DRG hub route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
 
