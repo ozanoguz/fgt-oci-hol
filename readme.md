@@ -140,7 +140,7 @@ We need to attach Spoke and FortiGate VCNs to DRG to enable communication.
 
 In DRG configuration screen, select "VCN attachments" on left.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/22.routing4.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/22.routing4a.JPG width="300"/>
 
 Configure FortiGate-VCN attachment as below:
 
