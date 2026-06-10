@@ -196,7 +196,7 @@ Spoke VCN attachment route-table configuration: (should be configured for both S
 
 VCN attachment route-table configuration should be like this:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17a.JPG width="400"/>
 
 ### Step 4.6: Import route distributions
 
