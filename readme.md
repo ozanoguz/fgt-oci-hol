@@ -228,7 +228,7 @@ We need to configure FortiGate HA cluster floating IP as next-hop for handling r
 
 Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID. _Navigation Path: Networking > Virtual Cloud Networks > Student##-VCN > Route Tables > Create Route Table_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18a.JPG width="400"/>
 
 FortiGate A/P HA cluster floating IP can be found under FortiGate-VM vNIC configuration. We will use trust interface floating IP as private IP target.
 
