@@ -220,7 +220,7 @@ Use import route distribution within DRG spoke route table: (_Path: Networking >
 
 Spoke DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24c2.JPG width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24c2.JPG width="400"/>
 
 ### Step 4.7: Hub VCN Ingress Route Table
 
