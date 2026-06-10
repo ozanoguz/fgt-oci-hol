@@ -160,7 +160,7 @@ Verify that you have 3 successful attachments:
 
 ### Step 4.3: Spoke subnet routing (for E/W and S/N inspection)
 
-Under _"Virtual cloud networks > Spoke1-VCN > Route tables"_, select **Student##-spoke1-routetable**
+Under _"Virtual cloud networks > Spoke1-VCN > Routing"_, select **Student##-spoke1-routetable**
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="300"/>
 
