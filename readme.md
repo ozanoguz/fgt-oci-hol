@@ -180,7 +180,7 @@ Configure route table **Student##-trust-routetable** as below. You can navigate 
 
 Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > Student##-DRG >  DRG route tables > Create DRG route table_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14.jpg width="400"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14a.JPG width="400"/>
 
 Associate DRG route tables with VCN attachments. 
 
