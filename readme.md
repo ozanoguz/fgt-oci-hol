@@ -162,7 +162,7 @@ Verify that you have 3 successful attachments:
 
 Under _"Virtual cloud networks > Spoke1-VCN > Routing"_, select **Student##-spoke1-routetable**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9a.JPG width="300"/>
 
 Edit 0.0.0.0/0 route to point DRG.
 
