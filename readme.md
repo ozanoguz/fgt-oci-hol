@@ -128,7 +128,7 @@ Type "dynamic routing gateway" to search box on top:
 
 Make sure specific compartment has been selected, then select "Create dynamic routing gateway".
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/19.routing2.jpg width="300"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/19.routing2a.jpg width="300"/>
 
 Set DRG name with your group student-ID as below. Make sure specific compartment has been selected.
 
