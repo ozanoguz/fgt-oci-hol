@@ -70,6 +70,10 @@ On next page, you should define a _**PREFIX**_ and paste **specific compartment 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02a.jpg width="700"/>
 
+Enter the given FortiFlex token values for both FortiGate VMs.
+
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.fortiflex.JPG width="700"/>
+
 It will take couple of minutes for deployment to be completed. It will be shown as *SUCCEEDED* after completion.
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03.jpg width="100"/>
