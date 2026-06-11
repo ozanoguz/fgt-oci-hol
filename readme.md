@@ -76,7 +76,7 @@ Enter the given FortiFlex token values for both FortiGate VMs.
 
 It will take couple of minutes for deployment to be completed. It will be shown as *SUCCEEDED* after completion.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03.jpg width="100"/>
+<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03a.JPG width="100"/>
 
 ### Step 2.2: Verify deployment
 
