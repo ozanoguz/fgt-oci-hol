@@ -256,25 +256,7 @@ SSH both cluster members using public IPs. **SSH login password is VM's OCID for
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt01.jpg width="300"/>
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt02.jpg width="500"/>
-
-Because of the known cloud-init issue, we need to execute "execute factoryreset" before proceeding:
-
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt04.jpg width="300"/>
-
-_**Make sure Step 5.1 is applied on both cluster members.**_
-
-### Step 5.2: FortiFlex license activation
-
-Since we are using BYOL type of image, FortiGate-VM license should be activated.
-
-You will need FortiFlex token for license activation. This will be shared during HoL session. CLI command is "execute vm-license <TOKEN-ID>". Type "y" for system to reboot and re-open with license activated. 
-
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt03.jpg width="300"/>
-
-Follow same steps for other FortiGate cluster member (FortiGate-B).
-
-### Step 5.3: FortiGate GUI and static route
+### Step 5.2: FortiGate GUI and static route
 
 Login FortiGate management GUI using public IPs _(https://<FortiGate-Public-IP>)_
 
@@ -290,7 +272,7 @@ You should see both static routes on active FortiGate member as below:
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt07.jpg width="400"/>
 
-### Step 5.4: Ingress firewall policy
+### Step 5.3: Ingress firewall policy
 
 Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside (North/South) to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
 
@@ -302,7 +284,7 @@ Then, we will create a ingress firewall policy using objects above. You can set 
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="400"/>
 
-### Step 5.5: Egress firewall policy
+### Step 5.4: Egress firewall policy
 
 Create host objects on FortiGate for Spoke1-VM and Spoke2-VM. (_Path: **Policy & Objects > Addresses  > Create New**_)
 
@@ -312,7 +294,7 @@ Using those objects, create an Egress Policy for allowing Internet access (South
 
 <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt12.jpg width="400"/>
 
-### Step 5.6: East-West firewall policy
+### Step 5.5: East-West firewall policy
 
 Create a firewall policy to allow traffic between Spoke VMs. We do not need NAT to be enabled.
 
