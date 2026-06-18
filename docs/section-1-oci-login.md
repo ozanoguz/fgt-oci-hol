@@ -23,13 +23,13 @@ fortinetoraclecloud1
 Choose the identity domain named **ksa_domain** from the dropdown list of domains.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/02.login_oci_2a.JPG" alt="Select OCI Identity Domain" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/02.login_oci_2a.JPG" alt="Select OCI Identity Domain" width="500">
 </p>
 
 Enter your username and password, then click **Sign In**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/03.login_oci_3a.JPG" alt="OCI Sign In" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/03.login_oci_3a.JPG" alt="OCI Sign In" width="500">
 </p>
 
 ---
@@ -39,7 +39,7 @@ Enter your username and password, then click **Sign In**.
 Change the Oracle region to **Saudi Arabia West (Jeddah)** using the region dropdown menu in the top-right corner.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="500">
 </p>
 
 ---
