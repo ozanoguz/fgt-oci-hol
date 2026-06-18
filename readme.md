@@ -14,7 +14,7 @@ This step-by-step guide describes how to deploy FortiGate Active/Passive cluster
 
 Here is the topology diagram showing all components that will be deployed:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/KSA_Topology.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/KSA_Topology.jpg" width="500"/>
 
 ## Section 1: Login OCI and prepare for deployment
 
@@ -26,21 +26,21 @@ First, let's login OCI console using link below. Username/password details will 
 
 Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/01.login_oci_1.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/01.login_oci_1.jpg" width="300"/>
 
 Choose identity domain named "ksa_domain" from the dropdown list of domains.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/02.login_oci_2a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/02.login_oci_2a.JPG" width="300"/>
 
 Enter username and password, then click "Sign In". 
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/03.login_oci_3a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/03.login_oci_3a.JPG" width="300"/>
 
 ### Step 1.2: Change Oracle region
 
 Change the Oracle region to "Saudi Arabia West (Jeddah) on top right using dropdown menu :
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/04.login_oci_4.jpg width="200"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/04.login_oci_4.jpg" width="200"/>
 
 ## Section 2: Deploy A/P FortiGate cluster
 
@@ -60,33 +60,33 @@ Template above is creating following infrastructure:
 
 In "Stacks" management page, check the *I have reviewed and accept the Oracle Terms of Use* box. 
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/05.stacks_01.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/05.stacks_01.jpg" width="400"/>
 
 Make sure specific student compartment has been selected. then click **_Next_** at bottom left.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/08.stacks_04.jpg width="200"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/08.stacks_04.jpg" width="200"/>
 
 On next page, you should define a _**PREFIX**_ and paste **specific compartment OCID value" for your deployment. Each group will use a different student-id and compartment, so we can easily find specific resources per study group. **This step is mandatory**. After this, you can click _**Next**_ on below left and then _**Create**_. **!!! IF THIS STEP IS NOT CONFIGURED CORRECTLY, DEPLOYMENT WILL FAIL !!!**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.stacks_02a.jpg width="700"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.stacks_02a.jpg" width="700"/>
 
 Enter the given FortiFlex token values for both FortiGate VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/06.fortiflex.JPG width="700"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.fortiflex.JPG" width="700"/>
 
 It will take couple of minutes for deployment to be completed. It will be shown as *SUCCEEDED* after completion.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/07.stacks_03a.JPG width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03a.JPG" width="500"/>
 
 ### Step 2.2: Verify deployment
 
 FortiGate-VMs should be deployed and shown as *running* under _**Compute > Instances **_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/09.verify01.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/09.verify01.jpg" width="500"/>
 
 There will be 3x VCNs deployed for lab as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/10.verify02.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/10.verify02.jpg" width="500"/>
 
 ## Section 3: Deploy Spoke-VMs for testing
 
@@ -94,33 +94,33 @@ There will be 3x VCNs deployed for lab as below:
 
 Click _**Create**_ on _**Compute > Instances**_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/11.spokevm01.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/11.spokevm01.jpg" width="400"/>
 
 Give a name to spoke-VM using group Student-ID# (example: Student25-Spoke1-VM)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/12.spokevm02.jpg width="200"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/12.spokevm02.jpg" width="200"/>
 
 Under "Image and shape" section select _Canonical Ubuntu 22.04" image for Spoke1-VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/13.spokevm03.jpg width="500"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/14.spokevm04a.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/13.spokevm03.jpg" width="500"/> <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/14.spokevm04a.jpg" width="500"/>
 
 Under "Primary VNIC Configuration" section, select related VCN and subnets as follows. **Remove "Automatically assign public IPV4 address" check, since we will not use it."**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/15.spokevm05a2.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/15.spokevm05a2.JPG" width="400"/>
 
 Under "Add SSH keys" section, download private key that we'll use later to login spoke-VMs.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/16.spokevm06a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/16.spokevm06a.JPG" width="400"/>
 
 Click "Create" to deploy Spoke1-VM.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/17.spokevm07a.JPG width="200"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/17.spokevm07a.JPG" width="200"/>
 
 **Repeat steps 3.1 for Spoke2-VM to deploy another Ubuntu-VM in Spoke2 VCN.**
 
 Before proceeding, make sure all VMs are in running state.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/20.spokevm07_1.jpg width="200"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/20.spokevm07_1.jpg" width="200"/>
 
 ## Section 4: OCI advanced routing
 
@@ -128,15 +128,15 @@ Before proceeding, make sure all VMs are in running state.
 
 Type "dynamic routing gateway" to search box on top:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/18.routing1.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/18.routing1.jpg" width="400"/>
 
 Make sure specific compartment has been selected, then select "Create dynamic routing gateway".
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/19.routing2a.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/19.routing2a.jpg" width="300"/>
 
 Set DRG name with your group student-ID as below. Make sure specific compartment has been selected.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/21.routing3.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/21.routing3.jpg" width="300"/>
 
 ### Step 4.2: DRG VCN attachments
 
@@ -144,33 +144,33 @@ We need to attach Spoke and FortiGate VCNs to DRG to enable communication.
 
 In DRG configuration screen, select "VCN attachments" on left.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/22.routing4a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/22.routing4a.JPG" width="300"/>
 
 Configure FortiGate-VCN attachment as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/23.routing5a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/23.routing5a.JPG" width="400"/>
 
 Configure Spoke1-VCN attachment as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/24.routing6a2.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/24.routing6a2.JPG" width="300"/>
 
 Configure Spoke2-VCN attachment as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/25.routing7a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/25.routing7a.JPG" width="300"/>
 
 Verify that you have 3 successful attachments:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/26.routing8.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/26.routing8.jpg" width="400"/>
 
 ### Step 4.3: Spoke subnet routing (for E/W and S/N inspection)
 
 Under _"Virtual cloud networks > Spoke1-VCN > Routing"_, select **Student##-spoke1-routetable**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/27.routing9a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/27.routing9a.JPG" width="300"/>
 
 Edit 0.0.0.0/0 route to point DRG.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/29.routing11a.JPG width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/29.routing11a.JPG" width="500"/>
 
 **Follow same step (4.3) to configure for Spoke2-VCN route table.**
 
@@ -178,13 +178,13 @@ Edit 0.0.0.0/0 route to point DRG.
 
 Configure route table **Student##-trust-routetable** as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/31.routing13a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/31.routing13a.JPG" width="400"/>
 
 ### Step 4.5: DRG route tables
 
 Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > Student##-DRG >  DRG route tables > Create DRG route table_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/32.routing14a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/32.routing14a.JPG" width="400"/>
 
 Associate DRG route tables with VCN attachments. 
 
@@ -192,15 +192,15 @@ FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attac
 
 FortiGate Hub VCN attachment route-table configuration:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/33.routing15a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/33.routing15a.JPG" width="300"/>
 
 Spoke VCN attachment route-table configuration: (should be configured for both Spoke-VCN attachments)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/34.routing16a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/34.routing16a.JPG" width="300"/>
 
 VCN attachment route-table configuration should be like this:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/35.routing17a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/35.routing17a.JPG" width="400"/>
 
 ### Step 4.6: Import route distributions
 
@@ -208,23 +208,23 @@ We need to create route distributions for DRG hub route tables, so required pref
 
 First, create an import route distribution for Hub DRG route table to allow spoke VCN CIDR's to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing22a2.JPG width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing22a2.JPG" width="600"/>
 
 Use import route distribution within DRG hub route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
 
 Hub DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24a2.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24a2.JPG" width="400"/>
 
 Second, create another import route distribution for Spoke DRG route table to allow Hub VCN CIDR to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24b2.JPG width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24b2.JPG" width="600"/>
 
 Use import route distribution within DRG spoke route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
 
 Spoke DRG route table:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing24c2.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24c2.JPG" width="400"/>
 
 ### Step 4.7: Hub VCN Ingress Route Table
 
@@ -232,21 +232,21 @@ We need to configure FortiGate HA cluster floating IP as next-hop for handling r
 
 Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID. _Navigation Path: Networking > Virtual Cloud Networks > Student##-VCN > Route Tables > Create Route Table_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/36.routing18a.JPG width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/36.routing18a.JPG" width="500"/>
 
 FortiGate A/P HA cluster floating IP can be found under FortiGate-VM vNIC configuration. We will use trust interface floating IP as private IP target.
 
 You can find the floating IP using this path: _Instances > Student##-FortiGate-A > Attached VNICs > Trust-a interface > IPv4 addresses > Secondary IP (not primary)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/38.routing20a.JPG width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/38.routing20a.JPG" width="300"/>
 
 Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs and Internet. _Navigation Path: Networking > Virtual cloud networks > Student##-VCN > Route Tables > Student##-Ingress-Route-Table > Add Route Rules_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/routing19a2.JPG width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing19a2.JPG" width="600"/>
 
 Now, we will use this route-table in Hub VCN DRG attachment configuration. Path: _Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > VCN attachments > Edit Hub VCN attachment_
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/39.routing21a.JPG width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/39.routing21a.JPG" width="400"/>
 
 ## Section 5: Configure FortiGate routing and firewall policy
 
@@ -254,7 +254,7 @@ Now, we will use this route-table in Hub VCN DRG attachment configuration. Path:
 
 SSH both cluster members using public IPs. **SSH login password is VM's OCID for the 1st time, which can be copied from OCI console.You can set any password you can remember.**
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt01.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt01.jpg" width="300"/>
 
 ### Step 5.2: FortiGate GUI and static route
 
@@ -262,43 +262,43 @@ Login FortiGate management GUI using public IPs _(https://<FortiGate-Public-IP>)
 
 Click to "Later" on following screen:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt05.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt05.jpg" width="400"/>
 
 We need to add Spoke-VCN CIDR routes and set port2-subnet's first IP address as gateway IP. This is done for return traffic. (_Path: **Network > Static Routes**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt06.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt06.jpg" width="400"/>
 
 You should see both static routes on active FortiGate member as below:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt07.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt07.jpg" width="400"/>
 
 ### Step 5.3: Ingress firewall policy
 
 Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside (North/South) to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt08.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt08.jpg" width="500"/>
 
 Create another VIP for Spoke2-VM using TCP/2245.
 
 Then, we will create a ingress firewall policy using objects above. You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt09.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt09.jpg" width="400"/>
 
 ### Step 5.4: Egress firewall policy
 
 Create host objects on FortiGate for Spoke1-VM and Spoke2-VM. (_Path: **Policy & Objects > Addresses  > Create New**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt10.jpg width="300"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt11.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt10.jpg" width="300"/> <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt11.jpg" width="300"/>
 
 Using those objects, create an Egress Policy for allowing Internet access (South/North). You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt12.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt12.jpg" width="400"/>
 
 ### Step 5.5: East-West firewall policy
 
 Create a firewall policy to allow traffic between Spoke VMs. We do not need NAT to be enabled.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/fgt13.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt13.jpg" width="400"/>
 
 ## Section 6: Testing the deployment
 
@@ -308,47 +308,47 @@ Using floating Public IP that is assigned to FortiGate-A untrust port, try to re
 
 SSH to Spoke1-VM:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test01.jpg width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test01.jpg" width="600"/>
 
 SSH to Spoke2-VM:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test02.jpg width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test02.jpg" width="600"/>
 
 Verification:
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test03.jpg width="400"/> <img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test04.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test03.jpg" width="400"/> <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test04.jpg" width="400"/>
 
 Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test05.jpg width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test05.jpg" width="500"/>
 
 ### Step 6.2: Egress test
 
 Try to ping Google DNS 8.8.8.8 from Spoke1-VM or Spoke2-VM
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test06.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test06.jpg" width="400"/>
 
 You can also try curl command to reach www.fortinet.com
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test07.jpg width="400"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test07.jpg" width="400"/>
 
 Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test08.jpg width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test08.jpg" width="600"/>
 
 ### Step 6.3: East/West test
 
 Try to reach Spoke2-VM from Spoke1-VM using SSH or Telnet to port TCP/22 as below.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test09.jpg width="300"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test09.jpg" width="300"/>
 
 Check FortiGate traffic logs (_Path: **Log & Report > Forward Traffic**_)
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/test10.jpg width="600"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test10.jpg" width="600"/>
 
 ## Section 7: Destroy the lab
 
 Access OCI Stacks service and destroy the template.
 
-<img src=https://github.com/ozanoguz/fgt-oci-hol/blob/main/images/destroy2.JPG width="500"/>
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/destroy2.JPG" width="500"/>
 
