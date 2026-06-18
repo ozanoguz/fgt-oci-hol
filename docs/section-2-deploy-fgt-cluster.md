@@ -27,13 +27,13 @@ Upload the Terraform stack package provided for the lab.
 Make sure the stack is created in your assigned compartment.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02.jpg" alt="Upload Stack Configuration" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02.jpg" alt="Upload Stack Configuration" width="500">
 </p>
 
 Review the stack information and continue.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02a.jpg" alt="Review Stack Information" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02a.jpg" alt="Review Stack Information" width="800">
 </p>
 
 ---
@@ -65,7 +65,7 @@ Student25
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/07.stacks_03.jpg" alt="Configure Stack Variables" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/07.stacks_03.jpg" alt="Configure Stack Variables" width="200">
 </p>
 
 Continue reviewing the variables.
@@ -81,7 +81,7 @@ Continue reviewing the variables.
 Review the stack configuration and click **Create**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/08.stacks_04.jpg" alt="Create Stack" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/08.stacks_04.jpg" alt="Create Stack" width="500">
 </p>
 
 ---
@@ -111,7 +111,7 @@ Compute > Instances
 Verify that both FortiGate instances are created and running.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/09.verify01.jpg" alt="Verify FortiGate Instances" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/09.verify01.jpg" alt="Verify FortiGate Instances" width="800">
 </p>
 
 ---
@@ -127,7 +127,7 @@ Networking > Virtual Cloud Networks
 Verify that the required VCNs and related network resources were created.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/10.verify02.jpg" alt="Verify OCI Network Resources" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/10.verify02.jpg" alt="Verify OCI Network Resources" width="800">
 </p>
 
 ---
