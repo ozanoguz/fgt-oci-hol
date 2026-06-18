@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: FortiGate OCI HOL
+  name: FortiGate OCI Hands-on-Lab
   text: Deploy FortiGate A/P HA Cluster on OCI
   tagline: Hands-on lab guide for FortiGate Active/Passive HA, OCI networking, DRG routing, spoke VMs, and traffic inspection.
   actions:
