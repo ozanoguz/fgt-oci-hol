@@ -35,7 +35,7 @@ Select an Ubuntu image for the spoke VM.
 Use the default or lab-provided shape unless your instructor gives different instructions.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/12.spokevm02.jpg" alt="Select Spoke VM Image and Shape" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/12.spokevm02.jpg" alt="Select Spoke VM Image and Shape" width="400">
 </p>
 
 ---
@@ -47,7 +47,7 @@ Select the correct VCN and subnet for the first spoke VM.
 Make sure you select the Spoke1 VCN and related subnet.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/13.spokevm03.jpg" alt="Configure Spoke VM Networking" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/13.spokevm03.jpg" alt="Configure Spoke VM Networking" width="800">
 </p>
 
 ---
@@ -127,11 +127,11 @@ Student25-Spoke2-VM
 Select the Spoke2 VCN and related subnet.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/17.spokevm07.jpg" alt="Create Second Spoke VM" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/17.spokevm07.jpg" alt="Create Second Spoke VM" width="400">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/17.spokevm07a.JPG" alt="Second Spoke VM Running" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/17.spokevm07a.JPG" alt="Second Spoke VM Running" width="400">
 </p>
 
 ---
