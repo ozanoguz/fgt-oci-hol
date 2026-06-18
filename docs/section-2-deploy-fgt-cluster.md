@@ -27,13 +27,13 @@ Upload the Terraform stack package provided for the lab.
 Make sure the stack is created in your assigned compartment.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02.jpg" alt="Upload Stack Configuration" width="500">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02.jpg" alt="Upload Stack Configuration" width="300">
 </p>
 
 Review the stack information and continue.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02a.jpg" alt="Review Stack Information" width="800">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02a.jpg" alt="Review Stack Information" width="900">
 </p>
 
 ---
@@ -81,7 +81,7 @@ Continue reviewing the variables.
 Review the stack configuration and click **Create**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/08.stacks_04.jpg" alt="Create Stack" width="500">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/08.stacks_04.jpg" alt="Create Stack" width="400">
 </p>
 
 ---
