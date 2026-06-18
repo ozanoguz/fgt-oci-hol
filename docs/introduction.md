@@ -44,8 +44,6 @@ By the end of this lab, you will be able to:
 
 ## Lab Topology
 
-Replace the image filename below with the actual topology image filename from your repository image folder.
-
 ![Lab Topology](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/KSA_Topology.jpg)
 
 ---
