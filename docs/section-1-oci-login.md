@@ -6,7 +6,7 @@ First, let's login OCI console using link below. Username/password details will 
 
 [Access OCI  Console](https://cloud.oracle.com)
 
-Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
+Use "*fortinetoraclecloud1*" as cloud account name, click *Next*. aaaaaa
 
 ![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/01.login_oci_1.jpg)
 
