@@ -1,125 +1,325 @@
-## Section 4: OCI advanced routing
+# Section 4: OCI Advanced Routing
 
-### Step 4.1: Create DRG
+In this section, you will configure OCI routing so that spoke traffic is steered through the FortiGate Active/Passive HA cluster.
 
-Type "dynamic routing gateway" to search box on top:
+---
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/18.routing1.jpg)
+## Step 4.1: Review the Existing Network Topology
 
-Make sure specific compartment has been selected, then select "Create dynamic routing gateway".
+Before changing routing, review the deployed VCNs, subnets, and FortiGate interfaces.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/19.routing2a.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/18.routing1.jpg" alt="Review Network Topology" width="700">
+</p>
 
-Set DRG name with your group student-ID as below. Make sure specific compartment has been selected.
+---
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/21.routing3.jpg)
+## Step 4.2: Create or Open the DRG
 
-### Step 4.2: DRG VCN attachments
+Open the OCI navigation menu and go to:
 
-We need to attach Spoke and FortiGate VCNs to DRG to enable communication. 
+```text
+Networking > Dynamic Routing Gateways
+```
 
-In DRG configuration screen, select "VCN attachments" on left.
+Create or open the DRG assigned to your lab.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/22.routing4a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2.jpg" alt="Open Dynamic Routing Gateways" width="700">
+</p>
 
-Configure FortiGate-VCN attachment as below:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2a.jpg" alt="Create or Review DRG" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/23.routing5a.JPG)
+---
 
-Configure Spoke1-VCN attachment as below:
+## Step 4.3: Attach VCNs to the DRG
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/24.routing6a2.JPG)
+Attach the following VCNs to the DRG:
 
-Configure Spoke2-VCN attachment as below:
+- FortiGate hub VCN
+- Spoke1 VCN
+- Spoke2 VCN
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/25.routing7a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/20.spokevm07_1.jpg" alt="Attach VCNs to DRG" width="700">
+</p>
 
-Verify that you have 3 successful attachments:
+---
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/26.routing8.jpg)
+## Step 4.4: Review DRG Attachments
 
-### Step 4.3: Spoke subnet routing (for E/W and S/N inspection)
+Verify that all VCN attachments are created successfully.
 
-Under _"Virtual cloud networks > Spoke1-VCN > Routing"_, select **Student##-spoke1-routetable**
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/21.routing3.jpg" alt="Review DRG Attachments" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/27.routing9a.JPG)
+---
 
-Edit 0.0.0.0/0 route to point DRG.
+## Step 4.5: Configure Spoke Route Tables
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/29.routing11a.JPG)
+Open the route table for the spoke subnet.
 
-**Follow same step (4.3) to configure for Spoke2-VCN route table.**
+Add or update the default route so spoke traffic is sent to the DRG.
 
-### Step 4.4: FortiGate Trust subnet routing
+Use:
 
-Configure route table **Student##-trust-routetable** as below. You can navigate there using path _"Networking > Virtual cloud networks > Student##-VCN > Route tables"_. This is for return traffic.
+```text
+Destination CIDR: 0.0.0.0/0
+Target: DRG
+```
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/31.routing13a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/22.routing4.jpg" alt="Configure Spoke Route Table" width="700">
+</p>
 
-### Step 4.5: DRG route tables
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/22.routing4a.JPG" alt="Review Spoke Route Table" width="700">
+</p>
 
-Create two separate route tables in DRG management screen as below. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways > Student##-DRG >  DRG route tables > Create DRG route table_
+Repeat the same routing change for the second spoke VCN.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/32.routing14a.JPG)
+---
 
-Associate DRG route tables with VCN attachments. 
+## Step 4.6: Configure Additional Spoke Routing
 
-FortiGate VCN attachment should use _Student##-Hub-Route-Table_, Spoke VCN attachments should use _Student##-Spoke-Route-Table_. Navigation path: _Networking > Virtual cloud networks > Customer connectivity > Dynamic routing gateways >Student##-DRG > VCN attachments > Edit_
+Review the route table configuration for the second spoke VCN.
 
-FortiGate Hub VCN attachment route-table configuration:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/23.routing5.jpg" alt="Configure Second Spoke Route Table" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/33.routing15a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/23.routing5a.JPG" alt="Review Second Spoke Route Table" width="700">
+</p>
 
-Spoke VCN attachment route-table configuration: (should be configured for both Spoke-VCN attachments)
+---
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/34.routing16a.JPG)
+## Step 4.7: Configure FortiGate Hub Routing
 
-VCN attachment route-table configuration should be like this:
+Open the FortiGate hub VCN route tables and configure the required routes for traffic inspection.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/35.routing17a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/24.routing6.jpg" alt="Configure FortiGate Hub Routing" width="700">
+</p>
 
-### Step 4.6: Import route distributions
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/24.routing6a.JPG" alt="Review Hub Route Table" width="700">
+</p>
 
-We need to create route distributions for DRG hub route tables, so required prefixes will be announced into route table for connectivity.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/24.routing6a2.JPG" alt="Review Additional Hub Route Table Settings" width="700">
+</p>
 
-First, create an import route distribution for Hub DRG route table to allow spoke VCN CIDR's to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
+---
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing22a2.JPG)
+## Step 4.8: Create DRG Route Tables
 
-Use import route distribution within DRG hub route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
+Create the required DRG route tables for hub and spoke routing.
 
-Hub DRG route table:
+Recommended naming example:
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24a2.JPG)
+```text
+Student25-Hub-DRG-Route-Table
+Student25-Spoke-DRG-Route-Table
+```
 
-Second, create another import route distribution for Spoke DRG route table to allow Hub VCN CIDR to be announced as below: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > Import route distributions > Create import route distribution_)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/25.routing7.jpg" alt="Create DRG Route Tables" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24b2.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/25.routing7a.JPG" alt="Review DRG Route Tables" width="700">
+</p>
 
-Use import route distribution within DRG spoke route table: (_Path: Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > DRG route tables > Edit_)
+---
 
-Spoke DRG route table:
+## Step 4.9: Associate DRG Route Tables
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing24c2.JPG)
+Associate the DRG route tables with the correct VCN attachments.
 
-### Step 4.7: Hub VCN Ingress Route Table
+Use the hub route table for the FortiGate hub VCN attachment.
 
-We need to configure FortiGate HA cluster floating IP as next-hop for handling routing by DRG. To achieve this, first let's create a route-table in FortiGate Hub VCN and use that route-table in Hub VCN DRG attachment ingress routing.
+Use the spoke route table for the spoke VCN attachments.
 
-Create a route-table in FortiGate Hub VCN as below. You can give a name using your group student-ID. _Navigation Path: Networking > Virtual Cloud Networks > Student##-VCN > Route Tables > Create Route Table_
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/26.routing8.jpg" alt="Associate DRG Route Tables" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/36.routing18a.JPG)
+---
 
-FortiGate A/P HA cluster floating IP can be found under FortiGate-VM vNIC configuration. We will use trust interface floating IP as private IP target.
+## Step 4.10: Configure Import Route Distributions
 
-You can find the floating IP using this path: _Instances > Student##-FortiGate-A > Attached VNICs > Trust-a interface > IPv4 addresses > Secondary IP (not primary)
+Create or update import route distributions for the DRG route tables.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/38.routing20a.JPG)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/27.routing9.jpg" alt="Configure Import Route Distributions" width="700">
+</p>
 
-Route rules are pointing FortiGate floating IP to reach out spoke VCN CIDRs and Internet. _Navigation Path: Networking > Virtual cloud networks > Student##-VCN > Route Tables > Student##-Ingress-Route-Table > Add Route Rules_
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/27.routing9a.JPG" alt="Review Import Route Distribution" width="700">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/routing19a2.JPG)
+---
 
-Now, we will use this route-table in Hub VCN DRG attachment configuration. Path: _Networking > Customer connectivity > Dynamic routing gateways > Student##-DRG > VCN attachments > Edit Hub VCN attachment_
+## Step 4.11: Configure Route Distribution Statements
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/39.routing21a.JPG)
+Add route distribution statements as required by the lab topology.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/28.routing10.jpg" alt="Configure Route Distribution Statements" width="700">
+</p>
+
+---
+
+## Step 4.12: Apply Import Route Distribution to Route Tables
+
+Apply the import route distribution to the correct DRG route table.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/29.routing11.jpg" alt="Apply Import Route Distribution" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/29.routing11a.JPG" alt="Review Applied Import Route Distribution" width="700">
+</p>
+
+---
+
+## Step 4.13: Review DRG Route Rules
+
+Review the imported and learned route rules in the DRG route tables.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/30.routing12.jpg" alt="Review DRG Route Rules" width="700">
+</p>
+
+---
+
+## Step 4.14: Configure Hub VCN Ingress Routing
+
+Open the Hub VCN ingress route table configuration.
+
+Route traffic that must be inspected toward the FortiGate floating private IP.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/31.routing13.jpg" alt="Configure Hub VCN Ingress Routing" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/31.routing13a.JPG" alt="Review Hub VCN Ingress Routing" width="700">
+</p>
+
+---
+
+## Step 4.15: Find the FortiGate Floating Private IP
+
+Locate the FortiGate floating private IP address from the FortiGate VNIC information.
+
+You will use this IP as the next hop for inspected traffic.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/32.routing14.jpg" alt="Find FortiGate Floating Private IP" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/32.routing14a.JPG" alt="Review FortiGate Floating Private IP" width="700">
+</p>
+
+---
+
+## Step 4.16: Add Ingress Route Rules
+
+Add the required ingress route rules pointing to the FortiGate floating private IP.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/33.routing15.jpg" alt="Add Ingress Route Rules" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/33.routing15a.JPG" alt="Review Ingress Route Rules" width="700">
+</p>
+
+---
+
+## Step 4.17: Apply the Ingress Route Table
+
+Apply the route table to the related DRG attachment ingress routing configuration.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/34.routing16.jpg" alt="Apply Ingress Route Table" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/34.routing16a.JPG" alt="Review Ingress Route Table Attachment" width="700">
+</p>
+
+---
+
+## Step 4.18: Validate Route Table Associations
+
+Review all route table associations and confirm that each attachment uses the correct DRG route table.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/35.routing17.jpg" alt="Validate Route Table Associations" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/35.routing17a.JPG" alt="Review Route Table Associations" width="700">
+</p>
+
+---
+
+## Step 4.19: Validate Final Routing
+
+Review the final routing configuration before moving to FortiGate policy configuration.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/36.routing18.jpg" alt="Validate Final Routing" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/36.routing18a.JPG" alt="Final Routing Review" width="700">
+</p>
+
+---
+
+## Step 4.20: Confirm OCI Advanced Routing
+
+Confirm that the required OCI route tables, DRG route tables, attachments, and distributions are complete.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/37.routing19.jpg" alt="Confirm OCI Advanced Routing" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/38.routing20.jpg" alt="Review Advanced Routing State" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/38.routing20a.JPG" alt="Review Advanced Routing Details" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/39.routing21.jpg" alt="Final Advanced Routing Validation" width="700">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/39.routing21a.JPG" alt="Final Advanced Routing Details" width="700">
+</p>
+
+---
+
+## Checkpoint
+
+Before continuing, confirm that:
+
+- The DRG exists.
+- FortiGate hub VCN is attached to the DRG.
+- Spoke1 VCN is attached to the DRG.
+- Spoke2 VCN is attached to the DRG.
+- DRG route tables are configured.
+- Import route distributions are configured.
+- Hub VCN ingress routing points inspected traffic to the FortiGate floating private IP.
