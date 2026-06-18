@@ -8,7 +8,7 @@ First, let's login OCI console using link below. Username/password details will 
 
 Use "*fortinetoraclecloud1*" as cloud account name, click *Next*.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/01.login_oci_1.jpg)
+![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/01.login_oci_1.jpg width="500")
 
 Choose identity domain named "ksa_domain" from the dropdown list of domains.
 
