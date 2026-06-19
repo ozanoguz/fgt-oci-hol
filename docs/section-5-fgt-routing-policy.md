@@ -41,7 +41,7 @@ Network > Static Routes
 You should see both static routes on the active FortiGate member as shown below:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt07.jpg" alt="FortiGate static routes" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt07.jpg" alt="FortiGate static routes" width="600">
 </p>
 
 ---
@@ -59,7 +59,7 @@ Policy & Objects > Virtual IPs > Create New
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt08.jpg" alt="Create VIP for Spoke1 VM SSH access" width="500">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt08.jpg" alt="Create VIP for Spoke1 VM SSH access" width="600">
 </p>
 
 Create another VIP for Spoke2-VM using TCP port `2245`.
@@ -69,7 +69,7 @@ Then create an ingress firewall policy using the VIP objects created above.
 For troubleshooting, set **Log Allowed Traffic** to **All Sessions**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt09.jpg" alt="Create ingress firewall policy" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt09.jpg" alt="Create ingress firewall policy" width="500">
 </p>
 
 ---
@@ -85,11 +85,11 @@ Policy & Objects > Addresses > Create New
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt10.jpg" alt="Create address object for Spoke1 VM" width="300">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt10.jpg" alt="Create address object for Spoke1 VM" width="400">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt11.jpg" alt="Create address object for Spoke2 VM" width="300">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt11.jpg" alt="Create address object for Spoke2 VM" width="400">
 </p>
 
 Using these address objects, create an egress firewall policy to allow Internet access from the spoke VMs.
@@ -97,7 +97,7 @@ Using these address objects, create an egress firewall policy to allow Internet 
 For troubleshooting, set **Log Allowed Traffic** to **All Sessions**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt12.jpg" alt="Create egress firewall policy" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt12.jpg" alt="Create egress firewall policy" width="500">
 </p>
 
 ---
@@ -109,7 +109,7 @@ Create a firewall policy to allow traffic between the spoke VMs.
 NAT does not need to be enabled for this policy.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt13.jpg" alt="Create east-west firewall policy" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt13.jpg" alt="Create east-west firewall policy" width="500">
 </p>
 
 ---
