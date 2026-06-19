@@ -1,3 +1,4 @@
+````markdown
 # Section 1: Login OCI and prepare for deployment
 
 In this section, you will access the Oracle Cloud Infrastructure console, log in with your assigned credentials, select the correct identity domain, and change the OCI region to the lab region.
@@ -6,13 +7,13 @@ In this section, you will access the Oracle Cloud Infrastructure console, log in
 
 ## Step 1.1: Access OCI console
 
-First, log in to the OCI console using the link below. Username and password details will be provided during the lab session.
+First, retrieve your assigned OCI username and password from the protected credential portal below.
 
 ### Retrieve Your Lab Credentials
 
-Your instructor will provide:
+To retrieve your credentials, use:
 
-1. A shared **Lab Access Key**
+1. The shared **Lab Access Key** announced during the lab session
 2. Your assigned **Student ID**
 
 Open the protected credential portal:
@@ -21,8 +22,8 @@ Open the protected credential portal:
 
 Enter:
 
-- The Lab Access Key provided by your instructor
-- Your assigned Student ID, such as `student24`
+- The shared **Lab Access Key**
+- Your assigned **Student ID**, such as `student24`
 
 The portal will display only the credentials assigned to your Student ID.
 
@@ -39,19 +40,25 @@ fortinetoraclecloud1
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/01.login_oci_1.jpg" alt="OCI Cloud Account Name" width="500">
+
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/01.login_oci_1.jpg" alt="OCI Cloud Account Name" width="500">
+
 </p>
 
 Choose the identity domain named **ksa_domain** from the dropdown list of domains.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/02.login_oci_2a.JPG" alt="Select OCI Identity Domain" width="500">
+
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/02.login_oci_2a.JPG" alt="Select OCI Identity Domain" width="500">
+
 </p>
 
-Enter your username and password, then click **Sign In**.
+Enter the username and password displayed in the credential portal, then click **Sign In**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/03.login_oci_3a.JPG" alt="OCI Sign In" width="400">
+
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/03.login_oci_3a.JPG" alt="OCI Sign In" width="400">
+
 </p>
 
 ---
@@ -61,7 +68,9 @@ Enter your username and password, then click **Sign In**.
 Change the Oracle region to **Saudi Arabia West (Jeddah)** using the region dropdown menu in the top-right corner.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="300">
+
+<img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="300">
+
 </p>
 
 ---
@@ -77,3 +86,4 @@ Before continuing, confirm that:
 Next section:
 
 [Section 2: Deploy FortiGate Cluster](./section-2-deploy-fgt-cluster.md)
+````
