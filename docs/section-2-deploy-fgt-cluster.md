@@ -45,7 +45,7 @@ This step is mandatory. If the prefix or compartment OCID is not configured corr
 After entering the required values, click **Next** at the bottom-left corner, then click **Create**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="300">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="200">
 </p>
 
 Enter the FortiFlex token values provided for both FortiGate VMs.

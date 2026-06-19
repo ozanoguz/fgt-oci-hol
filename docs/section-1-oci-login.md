@@ -8,6 +8,28 @@ In this section, you will access the Oracle Cloud Infrastructure console, log in
 
 First, log in to the OCI console using the link below. Username and password details will be provided during the lab session.
 
+### Retrieve Your Lab Credentials
+
+Your instructor will provide:
+
+1. A shared **Lab Access Key**
+2. Your assigned **Student ID**
+
+Open the protected credential portal:
+
+[Open Lab Credential Portal](https://sfvvdjstqiohvqhrrb2ihwmwcq0qzanh.lambda-url.eu-central-1.on.aws/)
+
+Enter:
+
+- The Lab Access Key provided by your instructor
+- Your assigned Student ID, such as `student24`
+
+The portal will display only the credentials assigned to your Student ID.
+
+> [!WARNING]
+> These credentials are temporary and are intended only for this hands-on lab.
+> Do not share, photograph, or reuse them outside the lab session.
+
 [Access OCI Console](https://cloud.oracle.com)
 
 Use the following cloud account name, then click **Next**:
