@@ -39,7 +39,7 @@ Enter your username and password, then click **Sign In**.
 Change the Oracle region to **Saudi Arabia West (Jeddah)** using the region dropdown menu in the top-right corner.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/04.login_oci_4.jpg" alt="Change OCI Region" width="300">
 </p>
 
 ---
