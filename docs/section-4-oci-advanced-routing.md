@@ -125,7 +125,7 @@ Networking > Virtual cloud networks > Customer connectivity > Dynamic routing ga
 FortiGate Hub VCN attachment route-table configuration:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/29.routing11.jpg" alt="FortiGate Hub VCN Attachment Route Table Configuration" width="500">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/29.routing11.jpg" alt="FortiGate Hub VCN Attachment Route Table Configuration" width="400">
 </p>
 
 Spoke VCN attachment route-table configuration should be configured for both Spoke-VCN attachments:
@@ -241,7 +241,7 @@ Networking > Virtual cloud networks > Student##-VCN > Route Tables > Student##-I
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/38.routing20.jpg" alt="Add Hub VCN Ingress Route Rules" width="400">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/38.routing20.jpg" alt="Add Hub VCN Ingress Route Rules" width="300">
 </p>
 
 Now, we will use this route table in Hub VCN DRG attachment configuration.

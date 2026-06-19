@@ -1,51 +1,129 @@
-## Section 5: Configure FortiGate routing and firewall policy
+# Section 5: Configure FortiGate routing and firewall policy
 
-### Step 5.1: Prepare FortiGate
+## Step 5.1: Prepare FortiGate
 
-SSH both cluster members using public IPs. **SSH login password is VM's OCID for the 1st time, which can be copied from OCI console.You can set any password you can remember.**
+SSH to both cluster members using their public IP addresses.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt01.jpg)
+The SSH login password is the VM's OCID for the first login. You can copy the OCID from the OCI Console. After logging in, set a new password that you can remember.
 
-### Step 5.2: FortiGate GUI and static route
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt01.jpg" alt="FortiGate public IP addresses" width="300">
+</p>
 
-Login FortiGate management GUI using public IPs (`https://<FortiGate-Public-IP>`)
+---
 
-Click to "Later" on following screen:
+## Step 5.2: FortiGate GUI and static route
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt05.jpg)
+Log in to the FortiGate management GUI using the public IP address:
 
-We need to add Spoke-VCN CIDR routes and set port2-subnet's first IP address as gateway IP. This is done for return traffic. (_Path: **Network > Static Routes**_)
+```text
+https://<FortiGate-Public-IP>
+```
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt06.jpg)
+Click **Later** on the following screen:
 
-You should see both static routes on active FortiGate member as below:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt05.jpg" alt="FortiGate setup screen" width="400">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt07.jpg)
+We need to add routes for the Spoke VCN CIDRs and use the first IP address of the port2 subnet as the gateway IP. This is required for return traffic.
 
-### Step 5.3: Ingress firewall policy
+Navigation path:
 
-Create a VIP (Virtual IP Address) using Spoke-VM IPs. Following example is showing traffic coming from outside (North/South) to TCP/2244 will be mapped to Spoke1-VMs SSH port, meaning destination IP and port NAT will be handled by FortiGate. (_Path: **Policy & Objects > Virtual IPs  > Create New**_)
+```text
+Network > Static Routes
+```
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt08.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt06.jpg" alt="Create FortiGate static route" width="400">
+</p>
 
-Create another VIP for Spoke2-VM using TCP/2245.
+You should see both static routes on the active FortiGate member as shown below:
 
-Then, we will create a ingress firewall policy using objects above. You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt07.jpg" alt="FortiGate static routes" width="400">
+</p>
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt09.jpg)
+---
 
-### Step 5.4: Egress firewall policy
+## Step 5.3: Ingress firewall policy
 
-Create host objects on FortiGate for Spoke1-VM and Spoke2-VM. (_Path: **Policy & Objects > Addresses  > Create New**_)
+Create a VIP using the Spoke VM private IP address.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt10.jpg) ![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt11.jpg)
+The following example shows traffic arriving from outside on TCP port `2244`. FortiGate maps this traffic to the SSH port of Spoke1-VM. FortiGate therefore performs destination IP and destination port NAT.
 
-Using those objects, create an Egress Policy for allowing Internet access (South/North). You can set "Log Allowed Traffic" option to "All Sessions" for troubleshooting.
+Navigation path:
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt12.jpg)
+```text
+Policy & Objects > Virtual IPs > Create New
+```
 
-### Step 5.5: East-West firewall policy
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt08.jpg" alt="Create VIP for Spoke1 VM SSH access" width="500">
+</p>
 
-Create a firewall policy to allow traffic between Spoke VMs. We do not need NAT to be enabled.
+Create another VIP for Spoke2-VM using TCP port `2245`.
 
-![image](https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt13.jpg)
+Then create an ingress firewall policy using the VIP objects created above.
+
+For troubleshooting, set **Log Allowed Traffic** to **All Sessions**.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt09.jpg" alt="Create ingress firewall policy" width="400">
+</p>
+
+---
+
+## Step 5.4: Egress firewall policy
+
+Create host address objects on FortiGate for Spoke1-VM and Spoke2-VM.
+
+Navigation path:
+
+```text
+Policy & Objects > Addresses > Create New
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt10.jpg" alt="Create address object for Spoke1 VM" width="300">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt11.jpg" alt="Create address object for Spoke2 VM" width="300">
+</p>
+
+Using these address objects, create an egress firewall policy to allow Internet access from the spoke VMs.
+
+For troubleshooting, set **Log Allowed Traffic** to **All Sessions**.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt12.jpg" alt="Create egress firewall policy" width="400">
+</p>
+
+---
+
+## Step 5.5: East-West firewall policy
+
+Create a firewall policy to allow traffic between the spoke VMs.
+
+NAT does not need to be enabled for this policy.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/fgt13.jpg" alt="Create east-west firewall policy" width="400">
+</p>
+
+---
+
+## Checkpoint
+
+Before continuing, confirm that:
+
+- You can access the FortiGate management GUI.
+- Static routes exist for both Spoke VCN CIDRs.
+- A VIP exists for Spoke1-VM using TCP port `2244`.
+- A VIP exists for Spoke2-VM using TCP port `2245`.
+- The ingress firewall policy is configured.
+- Host address objects exist for both spoke VMs.
+- The egress firewall policy is configured.
+- The east-west firewall policy is configured.
+- NAT is disabled on the east-west firewall policy.
