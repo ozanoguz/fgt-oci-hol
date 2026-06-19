@@ -11,13 +11,13 @@ Type **dynamic routing gateway** to the search box on top:
 Make sure the specific compartment has been selected, then select **Create dynamic routing gateway**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2.jpg" alt="Create Dynamic Routing Gateway" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2.jpg" alt="Create Dynamic Routing Gateway" width="500">
 </p>
 
 Set the DRG name with your group student-ID as below. Make sure the specific compartment has been selected.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2a.jpg" alt="Set DRG Name" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2a.jpg" alt="Set DRG Name" width="500">
 </p>
 
 ---
@@ -35,25 +35,25 @@ In the DRG configuration screen, select **VCN attachments** on the left.
 Configure FortiGate-VCN attachment as below:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/21.routing3.jpg" alt="FortiGate VCN Attachment" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/21.routing3.jpg" alt="FortiGate VCN Attachment" width="400">
 </p>
 
 Configure Spoke1-VCN attachment as below:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/22.routing4.jpg" alt="Spoke1 VCN Attachment" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/22.routing4.jpg" alt="Spoke1 VCN Attachment" width="600">
 </p>
 
 Configure Spoke2-VCN attachment as below:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/23.routing5.jpg" alt="Spoke2 VCN Attachment" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/23.routing5.jpg" alt="Spoke2 VCN Attachment" width="400">
 </p>
 
 Verify that you have 3 successful attachments:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/24.routing6.jpg" alt="Verify DRG VCN Attachments" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/24.routing6.jpg" alt="Verify DRG VCN Attachments" width="400">
 </p>
 
 ---
