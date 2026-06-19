@@ -14,7 +14,7 @@ Compute > Instances
 
 Click **Create instance**.
 
-Use a name based on your assigned student number.
+Use a name based on the Student ID you used in the credential portal.
 
 Example:
 
@@ -116,7 +116,7 @@ Running
 
 Repeat the same process for the second spoke VM.
 
-Use a name based on your assigned student number.
+Use a name based on the Student ID you used in the credential portal.
 
 Example:
 
