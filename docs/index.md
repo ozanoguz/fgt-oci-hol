@@ -9,9 +9,6 @@ hero:
     - theme: brand
       text: Start Lab
       link: /introduction
-    - theme: alt
-      text: View GitHub Repo
-      link: https://github.com/ozanoguz/fgt-oci-hol
 
 features:
   - title: FortiGate on OCI
