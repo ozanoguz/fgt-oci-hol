@@ -31,7 +31,7 @@ I have reviewed and accept the Oracle Terms of Use
 Make sure your assigned student compartment is selected, then click **Next** at the bottom-left corner.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.stacks_02.jpg" alt="Select Student Compartment" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.stacks_02.jpg" alt="Select Student Compartment" width="400">
 </p>
 
 On the next page, define a **PREFIX** and paste the specific compartment OCID value for your deployment.
@@ -45,7 +45,7 @@ This step is mandatory. If the prefix or compartment OCID is not configured corr
 After entering the required values, click **Next** at the bottom-left corner, then click **Create**.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="300">
 </p>
 
 Enter the FortiFlex token values provided for both FortiGate VMs.
@@ -63,7 +63,7 @@ SUCCEEDED
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/08.stacks_04.jpg" alt="OCI Stack Deployment Succeeded" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/08.stacks_04.jpg" alt="OCI Stack Deployment Succeeded" width="400">
 </p>
 
 ---
