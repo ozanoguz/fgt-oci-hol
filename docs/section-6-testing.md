@@ -40,7 +40,7 @@ Log & Report > Forward Traffic
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test05.jpg" alt="FortiGate Ingress Traffic Logs" width="500">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/test05.jpg" alt="FortiGate Ingress Traffic Logs" width="600">
 </p>
 
 ---
