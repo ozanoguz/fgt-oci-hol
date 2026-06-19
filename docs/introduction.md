@@ -50,20 +50,25 @@ By the end of this lab, you will be able to:
 
 ## Prerequisites
 
-Before starting, confirm that you have received the following information from your instructor:
+Before starting, confirm that you have:
+
+- The shared **Lab Access Key** announced during the lab session
+- Your assigned **Student ID**
+
+Use these details in the protected credential portal to retrieve the lab-specific values below:
 
 | Item | Example / Notes |
 |---|---|
 | OCI Console URL | `https://cloud.oracle.com/` |
-| Cloud account name | Provided by instructor |
-| Identity domain | Provided by instructor |
-| OCI username | Provided by instructor |
-| OCI password | Provided by instructor |
+| Cloud account name | Displayed in the credential portal |
+| Identity domain | Displayed in the credential portal |
+| OCI username | Displayed in the credential portal |
+| OCI password | Displayed in the credential portal |
 | OCI region | Saudi Arabia West Jeddah |
-| Student compartment | Provided by instructor |
-| Student prefix | Example: `Student25` |
-| Compartment OCID | Provided by instructor |
-| FortiFlex token values | Provided by instructor |
+| Student compartment | Displayed in the credential portal |
+| Student prefix | Based on your assigned Student ID, for example `Student25` |
+| Compartment OCID | Displayed in the credential portal |
+| FortiFlex token values | Displayed in the credential portal |
 
 ::: danger Important
 Do not share OCI credentials, FortiGate passwords, private keys, compartment OCIDs, or FortiFlex token values with other students.

@@ -14,7 +14,7 @@ Make sure the specific compartment has been selected, then select **Create dynam
   <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2.jpg" alt="Create Dynamic Routing Gateway" width="500">
 </p>
 
-Set the DRG name with your group student-ID as below. Make sure the specific compartment has been selected.
+Set the DRG name using the Student ID you used in the credential portal, as shown below. Make sure the specific compartment has been selected.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/19.routing2a.jpg" alt="Set DRG Name" width="500">
@@ -206,7 +206,7 @@ We need to configure the FortiGate HA cluster floating IP as next-hop for handli
 
 To achieve this, first create a route table in the FortiGate Hub VCN and use that route table in Hub VCN DRG attachment ingress routing.
 
-Create a route table in FortiGate Hub VCN as below. You can give a name using your group student-ID.
+Create a route table in FortiGate Hub VCN as shown below. Use the Student ID you used in the credential portal when naming it.
 
 Navigation path:
 
