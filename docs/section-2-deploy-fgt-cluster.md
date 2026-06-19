@@ -1,143 +1,87 @@
-# Section 2: Deploy FortiGate Cluster
+# Section 2: Deploy A/P FortiGate cluster
 
-In this section, you will deploy a FortiGate Active/Passive HA cluster on Oracle Cloud Infrastructure using OCI Resource Manager Stacks.
+## Step 2.1: Deploy FortiGate cluster using Terraform
 
----
+Click the link below using the same browser you used to log in to OCI.
 
-## Step 2.1: Open OCI Resource Manager Stacks
+The link redirects you to the Oracle Resource Manager Stacks service, which uses Terraform behind the scenes.
 
-In the OCI Console, open the navigation menu and go to:
+| Create Lab Environment |
+|:--:|
+| [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/ozanoguz/fgt-oci-hol/releases/download/hol/FGT_A-P_NewVCN_v8.0.0_BYOL.zip) |
+
+The template creates the following infrastructure:
+
+- 3 VCNs:
+  - 2 Spoke VCNs
+  - 1 FortiGate VCN
+- Required subnets, route tables, and security lists
+- 2 FortiGate-VM instances using FortiOS 7.0.12 BYOL images
+
+On the **Stacks** management page, select:
 
 ```text
-Developer Services > Resource Manager > Stacks
+I have reviewed and accept the Oracle Terms of Use
 ```
 
-Click **Create stack**.
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/05.stacks_01.jpg" alt="OCI Resource Manager Stacks" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/05.stacks_01.jpg" alt="Accept Oracle Terms of Use" width="700">
 </p>
 
----
-
-## Step 2.2: Upload the Stack Configuration
-
-Upload the Terraform stack package provided for the lab.
-
-Make sure the stack is created in your assigned compartment.
+Make sure your assigned student compartment is selected, then click **Next** at the bottom-left corner.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02.jpg" alt="Upload Stack Configuration" width="300">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.stacks_02.jpg" alt="Select Student Compartment" width="700">
 </p>
 
-Review the stack information and continue.
+On the next page, define a **PREFIX** and paste the specific compartment OCID value for your deployment.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.stacks_02a.jpg" alt="Review Stack Information" width="900">
-</p>
+Each group uses a different student ID and compartment so that the resources for each study group can be identified easily.
 
----
-
-## Step 2.3: Configure FortiFlex Licensing
-
-Enter the FortiFlex token information provided by your instructor.
-
-::: warning Important
-Use only the FortiFlex tokens assigned to your student number.
+::: danger Important
+This step is mandatory. If the prefix or compartment OCID is not configured correctly, the deployment will fail.
 :::
 
+After entering the required values, click **Next** at the bottom-left corner, then click **Create**.
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/06.fortiflex.JPG" alt="FortiFlex Configuration" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="700">
 </p>
 
----
+Enter the FortiFlex token values provided for both FortiGate VMs.
 
-## Step 2.4: Configure Stack Variables
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.fortiflex.JPG" alt="Enter FortiFlex Token Values" width="700">
+</p>
 
-Complete the required stack variables.
+The deployment takes a few minutes to complete.
 
-Use your assigned student number as the deployment prefix.
-
-Example:
+When the deployment is complete, the job status is shown as:
 
 ```text
-Student25
+SUCCEEDED
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/07.stacks_03.jpg" alt="Configure Stack Variables" width="200">
-</p>
-
-Continue reviewing the variables.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/07.stacks_03a.JPG" alt="Review Stack Variables" width="700">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/08.stacks_04.jpg" alt="OCI Stack Deployment Succeeded" width="700">
 </p>
 
 ---
 
-## Step 2.5: Create the Stack
+## Step 2.2: Verify deployment
 
-Review the stack configuration and click **Create**.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/08.stacks_04.jpg" alt="Create Stack" width="400">
-</p>
-
----
-
-## Step 2.6: Apply the Stack
-
-After the stack is created, run **Apply**.
-
-Wait until the job status becomes:
-
-```text
-Succeeded
-```
-
-Do not continue until the apply job completes successfully.
-
----
-
-## Step 2.7: Verify FortiGate Instances
-
-Navigate to:
+The FortiGate VMs should be deployed and shown as **Running** under:
 
 ```text
 Compute > Instances
 ```
 
-Verify that both FortiGate instances are created and running.
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/09.verify01.jpg" alt="Verify FortiGate Instances" width="800">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/09.verify01.jpg" alt="Verify FortiGate VMs Are Running" width="700">
 </p>
 
----
-
-## Step 2.8: Verify Network Resources
-
-Navigate to:
-
-```text
-Networking > Virtual Cloud Networks
-```
-
-Verify that the required VCNs and related network resources were created.
+There should be three VCNs deployed for the lab.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/docs/public/images/10.verify02.jpg" alt="Verify OCI Network Resources" width="800">
+  <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/10.verify02.jpg" alt="Verify Three Lab VCNs" width="700">
 </p>
-
----
-
-## Checkpoint
-
-Before continuing, confirm that:
-
-- The Resource Manager stack was created.
-- The apply job completed successfully.
-- Both FortiGate instances are running.
-- The required VCNs were created.
-- You are still working in your assigned compartment.
