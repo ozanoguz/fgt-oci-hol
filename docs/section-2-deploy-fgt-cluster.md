@@ -34,7 +34,7 @@ Make sure your assigned student compartment is selected, then click **Next** at 
   <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.stacks_02.jpg" alt="Select Student Compartment" width="400">
 </p>
 
-On the next page, define a **PREFIX** and paste the specific compartment OCID value for your deployment.
+On the next page, define a **PREFIX** and paste the **Compartment OCID** displayed in the credential portal. Each group uses a different Student ID and compartment so that the resources for each study group can be identified easily.
 
 Each group uses a different student ID and compartment so that the resources for each study group can be identified easily.
 
@@ -48,7 +48,7 @@ After entering the required values, click **Next** at the bottom-left corner, th
   <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/07.stacks_03.jpg" alt="Configure Prefix and Compartment OCID" width="200">
 </p>
 
-Enter the FortiFlex token values provided for both FortiGate VMs.
+Enter the FortiFlex token values displayed in the credential portal for both FortiGate VMs.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ozanoguz/fgt-oci-hol/main/images/06.fortiflex.JPG" alt="Enter FortiFlex Token Values" width="700">
