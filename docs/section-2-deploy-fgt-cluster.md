@@ -16,7 +16,7 @@ The template creates the following infrastructure:
   - 2 Spoke VCNs
   - 1 FortiGate VCN
 - Required subnets, route tables, and security lists
-- 2 FortiGate-VM instances using FortiOS 7.0.12 BYOL images
+- 2 FortiGate-VM instances using FortiOS 8.0.0 BYOL images
 
 On the **Stacks** management page, select:
 
